@@ -1,0 +1,176 @@
+{
+  "common": {
+    "home": "Startseite",
+    "products": "Produkte",
+    "applications": "Anwendungen",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "allProducts": "All Products",
+    "showProducts": "Eine umfangreiche und vollständige Produktpalette",
+    "viewAll": "Alle anzeigen Tags"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Gasfedern",
+      "title": "Professionelle Gasfederlösungen",
+      "subtitle": "Innovative Gasfederlösungen für verschiedene industrielle Anwendungen",
+      "ctaContact": "Kontaktieren Sie uns",
+      "ctaProduct": "Unsere Produkte entdecken"
+    },
+    "service": {
+      "title": "Customized Service Process",
+      "description": "We provide comprehensive customization services from design to production, ensuring each product perfectly meets your requirements",
+      "steps": {
+        "stepOne": {
+          "title": "Requirement Analysis",
+          "description": "We understand your requirements and industry needs."
+        },
+        "stepTwo": {
+          "title": "Solution Design",
+          "description": "We design customized gas spring solutions that are specifically designed to meet your unique requirements."
+        },
+        "stepThree": {
+          "title": "Sample Confirmation",
+          "description": "We provide free samples for testing and confirmation."
+        },
+        "stepFour": {
+          "title": "Batch Production",
+          "description": "We strictly follow ISO 9001:2000 standard, ensuring high quality and performance for each product."
+        }
+      }
+    },
+    "features": {
+      "title": "Warum unsere Gasfedern wählen?",
+      "description": "Wir bieten umfassende Gasfederlösungen, die vielfältige industrielle Anforderungen erfüllen",
+      "items": [
+        {
+          "title": "Customized Solutions",
+          "description": "We offer customized gas spring solutions that are specifically designed to meet your unique requirements."
+        },
+        {
+          "title": "Quality Excellence",
+          "description": "We strictly follow ISO 9001:2000 standard, ensuring high quality and performance for each product."
+        },
+        {
+          "title": "Technical Excellence",
+          "description": "We master the core technology of long-distance gas springs, enabling precise control of damping and pop-out speed, even in challenging environments."
+        },
+        {
+          "title": "Global Services",
+          "description": "We provide global services, including engineering consultation, installation guidance, and comprehensive online technical support."
+        }
+      ]
+    }
+  },
+  "categoryViewMore": "Mehr anzeigen",
+  "spotlights": {
+    "solarDamperShort": "Solar Damper",
+    "solarDamperLong": "A comprehensive solution for solar damper systems, check full whitepaper now"
+  },
+  "applications": {
+    "title": "Anwendung",
+    "description": "Entdecken Sie unsere Gasfeder-Anwendungen",
+    "descriptionLabel": "Anwendungsbeschreibung",
+    "solutionLabel": "Gasdruckfeder-Lösung",
+    "relatedPostsLabel": "Verwandte Beiträge mit Fallreferenzen",
+    "noRelatedPosts": "Non related posts in current language",
+    "viewMoreString": "Contact Us to Get More Info"
+  },
+  "blog": {
+    "description": "Unser Einblick in die Gasfederindustrie und deren Produkte",
+    "tags": "Tags",
+    "tableOfContents": "Inhaltsverzeichnis",
+    "relatedPosts": "Verwandte Beiträge",
+    "backToBlog": "Zurück zu den neuesten Beiträgen",
+    "popularTags": "Beginnen Sie mit unseren beliebten Schlagwörtern",
+    "allTags": "Alle Tags",
+    "tagsDescription": "Durchsuche alle Blogbeiträge nach Tags",
+    "posts": "Beiträge",
+    "previousPost": "Vorheriger Beitrag",
+    "nextPost": "Nächster Beitrag"
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "description": "Wenn Sie Fragen oder Anliegen haben, zögern Sie nicht, uns zu kontaktieren. Unser Team steht Ihnen gerne zur Verfügung.",
+    "company": "Unternehmenszentrale",
+    "address": "Ningbo, Zhejiang, China",
+    "phone": "Kontaktnummer",
+    "email": "E-Mail-Adresse",
+    "office": "Büroadresse",
+    "officeAddress": "Gebäude A, Forschungspark, Hochtechnologiezone, Ningbo, Zhejiang, China",
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "company": "Firma",
+      "phone": "Telefon",
+      "message": "Nachricht",
+      "submit": "Absenden",
+      "submitting": "Wird gesendet...",
+      "placeholder": {
+        "name": "John Smith",
+        "email": "johnsmith@Firmenname.com",
+        "company": "Firmenname",
+        "phone": "+1-1212345678",
+        "message": "Ich möchte Details über Edelstahl-Gasdruckfedern erfahren. Die technischen Anforderungen für unser aktuelles Projekt sind..."
+      },
+      "validation": {
+        "name": {
+          "required": "Bitte geben Sie Ihren Namen ein",
+          "min": "Der Name muss mindestens 2 Zeichen lang sein",
+          "max": "Der Name darf nicht länger als 50 Zeichen sein",
+          "invalid": "Der Name enthält ungültige Zeichen"
+        },
+        "email": {
+          "required": "Bitte geben Sie Ihre E-Mail-Adresse ein",
+          "invalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+          "tempEmail": "Temporäre E-Mail-Adressen sind nicht erlaubt"
+        },
+        "company": {
+          "length": "Der Firmenname muss zwischen 2-100 Zeichen lang sein",
+          "invalid": "Der Firmenname enthält ungültige Zeichen"
+        },
+        "phone": {
+          "invalid": "Bitte geben Sie eine gültige Telefonnummer ein"
+        },
+        "message": {
+          "min": "Die Nachricht muss mindestens 10 Zeichen lang sein",
+          "max": "Die Nachricht darf nicht länger als 1000 Zeichen sein",
+          "sensitive": "Die Nachricht enthält unangemessene Wörter"
+        }
+      }
+    },
+    "success": {
+      "title": "Erfolgreich gesendet",
+      "message": "Vielen Dank für Ihre Nachricht. Wir werden uns so schnell wie möglich bei Ihnen melden.",
+      "description": "Wir werden uns so schnell wie möglich bei Ihnen melden."
+    },
+    "error": {
+      "title": "Fehler beim Senden",
+      "message": "Entschuldigung, das Senden ist fehlgeschlagen. Bitte versuchen Sie es später noch einmal.",
+      "tooFrequent": {
+        "title": "Zu häufige Übermittlung",
+        "description": "Bitte warten Sie {seconds} Sekunden und versuchen Sie es erneut"
+      }
+    }
+  },
+  "footer": {
+    "description": "Professionelle Gasfeder-Lösungen für die globale Fertigung",
+    "quickLinks": "Schnellzugriff",
+    "legal": "Rechtliches",
+    "terms": "Nutzungsbedingungen",
+    "privacy": "Datenschutzrichtlinie"
+  },
+  "error": {
+    "notFoundTitle": "Seite nicht gefunden",
+    "notFoundDescription": "Entschuldigung, die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "backToHome": "Zurück zur Startseite"
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "description": "Diese Datenschutzerklärung erläutert, wie wir Ihre Daten erfassen, nutzen, verarbeiten und schützen, wenn Sie mit unseren Diensten interagieren."
+  },
+  "terms": {
+    "title": "Terms of Use",
+    "description": "Eine vollständige Vereinbarung, die Nutzungsbedingungen, Haftungszuordnung, Datenschutz, Produktrichtlinien (Bestellung/Lieferung/Rückgabe/Garantie), Haftungsausschluss sowie das anwendbare Recht abdeckt."
+  }
+}

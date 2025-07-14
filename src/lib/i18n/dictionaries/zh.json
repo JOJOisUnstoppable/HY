@@ -1,0 +1,198 @@
+{
+  "common": {
+    "home": "首页",
+    "products": "产品",
+    "applications": "应用",
+    "blog": "博客",
+    "contact": "联系我们",
+    "allProducts": "所有产品",
+    "showProducts": "丰富完整的产品线",
+    "viewAll": "浏览全部标签"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "全球领先技术",
+      "title": "专业气弹簧与运动控制解决方案供应商",
+      "subtitle": "为您提供定制化、高品质、免维护的气弹簧、支撑杆与阻尼器解决方案，驱动您的业务高效运转。",
+      "ctaContact": "立即获取定制方案",
+      "ctaProduct": "浏览产品"
+    },
+    "service": {
+      "title": "定制服务流程",
+      "description": "们提供从设计到生产的全方位定制服务，确保每个产品都完美匹配您的需求。",
+      "steps": {
+        "stepOne": {
+          "title": "需求分析",
+          "description": "深入了解您的应用场景和技术要求"
+        },
+        "stepTwo": {
+          "title": "方案设计",
+          "description": "专业工程师为您设计最优解决方案"
+        },
+        "stepThree": {
+          "title": "样品确认",
+          "description": "提供免费样品供您测试和确认"
+        },
+        "stepFour": {
+          "title": "批量生产",
+          "description": "严格把控，按时交付优质量产品"
+        }
+      }
+    },
+    "products": {
+      "title": "Products",
+      "description": "Discover Our Gas Spring Applications",
+     "items": [
+        {
+          "image": "/images/product/product-dp-001.png",
+          "name": "product1"
+        },
+        {
+          "image": "/images/product/product-dp-001.png",
+          "name": "product1"
+        },
+        {
+          "image": "/images/product/product-dp-001.png",
+          "name": "product1"
+        },
+        {
+          "image": "/images/product/product-dp-001.png",
+          "name": "product1"
+        }
+      ]
+    },
+    "features": {
+      "title": "为什么选择 DK",
+      "description": "我们凭借行业经验和技术创新提供全面的气弹簧解决方案，满足多样化的工业需求",
+      "items": [
+        {
+          "title": "定制化专家",
+          "description": "量身定制的气弹簧解决方案，从设计到生产，精准匹配您的需求。提供样品检验，确保完美契合。"
+        },
+        {
+          "title": "卓越品质",
+          "description": "严格遵循ISO 9001:2000标准，每批产品都经过严苛测试，提供详细性能测试报告。"
+        },
+        {
+          "title": "创新技术",
+          "description": "掌握超长行程气弹簧核心技术，精确控制阻尼与弹出速度，即使在严苛环境下也能稳定运行。"
+        },
+        {
+          "title": "全球服务",
+          "description": "无论您身处何地，DK都提供专业的工程咨询、安装指导和全面的在线技术支持。"
+        }
+      ]
+    }
+  },
+  "categoryViewMore": "查看更多",
+  "spotlights": {
+    "solarDamperShort": "太阳能支架气弹簧",
+    "solarDamperLong": "为太阳能电池板及太阳能光伏系统设计的气弹簧解决方案，点击查看完整白皮书"
+  },
+  "applications": {
+    "title": "应用",
+    "description": "探索我们的气弹簧应用",
+    "descriptionLabel": "应用描述",
+    "solutionLabel": "气弹簧专用解决方案",
+    "relatedPostsLabel": "相关文章和案例参考",
+    "noRelatedPosts": "当前语言暂无相关文章",
+    "viewMoreString": "联系我们以了解更多"
+  },
+  "blog": {
+    "description": "我们对行业的深入耕耘，为您提供最新的信息和解决方案。",
+    "tags": "标签",
+    "tableOfContents": "目录",
+    "relatedPosts": "相关文章",
+    "backToBlog": "返回博客列表",
+    "popularTags": "从热门标签开始浏览",
+    "allTags": "所有标签",
+    "tagsDescription": "按标签浏览所有博客文章",
+    "posts": "篇文章",
+    "previousPost": "上一篇",
+    "nextPost": "下一篇"
+  },
+  "contact": {
+    "title": "联系我们",
+    "description": "如果您有任何问题或需求，请随时与我们联系。我们的团队将竭诚为您服务。",
+    "company": "公司总部",
+    "address": "中国浙江省宁波市",
+    "phone": "联系电话",
+    "email": "电子邮箱",
+    "office": "办公地址",
+    "officeAddress": "浙江宁波",
+    "form": {
+      "name": "姓名",
+      "email": "邮箱",
+      "company": "公司",
+      "phone": "电话",
+      "message": "留言",
+      "submit": "提交",
+      "submitting": "提交中...",
+      "placeholder": {
+        "name": "Richard Chen",
+        "email": "richard@company.com",
+        "company": "Company Name",
+        "phone": "+86-13512345678",
+        "message": "我想了解不锈钢气压弹簧这个产品，我们当前项目的技术需求是……"
+      },
+      "validation": {
+        "name": {
+          "required": "请输入姓名",
+          "min": "姓名至少需要2个字符",
+          "max": "姓名不能超过50个字符",
+          "invalid": "姓名包含无效字符"
+        },
+        "email": {
+          "required": "请输入邮箱地址",
+          "invalid": "请输入有效的邮箱地址",
+          "tempEmail": "不允许使用临时邮箱"
+        },
+        "company": {
+          "length": "公司名称长度必须在2-100个字符之间",
+          "invalid": "公司名称包含无效字符"
+        },
+        "phone": {
+          "invalid": "请输入有效的电话号码"
+        },
+        "message": {
+          "min": "消息内容至少需要10个字符",
+          "max": "消息内容不能超过1000个字符",
+          "sensitive": "消息内容包含不适当的词语"
+        }
+      }
+    },
+    "success": {
+      "title": "提交成功",
+      "message": "感谢您的留言，我们会尽快与您联系。",
+      "description": "我们会尽快与您联系。"
+    },
+    "error": {
+      "title": "提交失败",
+      "message": "抱歉，提交失败，请稍后重试。",
+      "tooFrequent": {
+        "title": "提交过于频繁",
+        "description": "请等待 {seconds} 秒后再试"
+      }
+    }
+  },
+  "footer": {
+    "description": "专业的气弹簧解决方案，服务全球制造业",
+    "quickLinks": "快速链接",
+    "legal": "法律条款",
+    "terms": "使用条款",
+    "privacy": "隐私政策"
+  },
+  "error": {
+    "notFoundTitle": "页面未找到",
+    "notFoundDescription": "抱歉，您访问的页面不存在或已被移动。",
+    "backToHome": "返回首页"
+  },
+  "privacy": {
+    "title": "隐私政策",
+    "description": "本隐私政策阐述了您与我们的服务进行互动时，我们如何收集、使用、处理和保护您的数据。"
+  },
+  "terms": {
+    "title": "使用条款",
+    "description": "涵盖服务条款、责任归属、数据隐私、产品政策（订购/交付/退货/保修）、免责声明及管辖法律等内容的完整协议。"
+  }
+}

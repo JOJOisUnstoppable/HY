@@ -1,0 +1,198 @@
+{
+  "common": {
+    "home": "Inicio",
+    "products": "Productos",
+    "applications": "Aplicaciones",
+    "blog": "Blog",
+    "contact": "Contáctanos",
+    "allProducts": "All Products",
+    "showProducts": "Una línea de productos rica y completa",
+    "viewAll": "Ver todo Etiquetas"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Soluciones Profesionales",
+      "title": "Soluciones Profesionales de Resortes de Gas",
+      "subtitle": "Soluciones innovadoras de resortes de gas para diversas aplicaciones industriales",
+      "ctaContact": "Obtenga una propuesta personalizada ahora",
+      "ctaProduct": "Explora Nuestros Productos"
+    },
+    "service": {
+      "title": "Customized Service Process",
+      "description": "We provide comprehensive customization services from design to production, ensuring each product perfectly meets your requirements",
+      "steps": {
+        "stepOne": {
+          "title": "Requirement Analysis",
+          "description": "We understand your requirements and industry needs."
+        },
+        "stepTwo": {
+          "title": "Solution Design",
+          "description": "We design customized gas spring solutions that are specifically designed to meet your unique requirements."
+        },
+        "stepThree": {
+          "title": "Sample Confirmation",
+          "description": "We provide free samples for testing and confirmation."
+        },
+        "stepFour": {
+          "title": "Batch Production",
+          "description": "We strictly follow ISO 9001:2000 standard, ensuring high quality and performance for each product."
+        }
+      }
+    },
+    "products": {
+      "title": "Products",
+      "description": "Discover Our Gas Spring Applications",
+     "items": [
+        {
+          "image": "/images/product/product-dp-001.png",
+          "name": "product1"
+        },
+        {
+          "image": "/images/product/product-dp-001.png",
+          "name": "product1"
+        },
+        {
+          "image": "/images/product/product-dp-001.png",
+          "name": "product1"
+        },
+        {
+          "image": "/images/product/product-dp-001.png",
+          "name": "product1"
+        }
+      ]
+    },
+    "features": {
+      "title": "Por qué Elegir Nuestros Resortes de Gas",
+      "description": "Ofrecemos soluciones integrales de resortes de gas que satisfacen diversas necesidades industriales",
+      "items": [
+        {
+          "title": "Soluciones Personalizadas",
+          "description": "Resortes de gas diseñados a medida para cumplir con tus requisitos específicos"
+        },
+        {
+          "title": "Estándares Globales",
+          "description": "Productos fabricados según estándares de calidad internacionales"
+        },
+        {
+          "title": "Soporte Técnico",
+          "description": "Asistencia técnica profesional durante todo el proceso"
+        },
+        {
+          "title": "Garantía",
+          "description": "Garantía de satisfacción del cliente para satisfacer sus necesidades"
+        }
+      ]
+    }
+  },
+  "categoryViewMore": "Ver más",
+  "spotlights": {
+    "solarDamperShort": "Solar Damper",
+    "solarDamperLong": "A comprehensive solution for solar damper systems, check full whitepaper now"
+  },
+  "applications": {
+    "title": "Aplicación",
+    "description": "Descubre nuestras aplicaciones de resortes de gas",
+    "descriptionLabel": "Descripción de la Aplicación",
+    "solutionLabel": "Solución de Resortes de Gas",
+    "relatedPostsLabel": "Publicaciones Relacionadas con Referencias de Casos",
+    "noRelatedPosts": "Non related posts in current language",
+    "viewMoreString": "Contact Us to Get More Info"
+  },
+  "blog": {
+    "description": "Nuestra visión de la industria y los productos de los amortiguadores de gas",
+    "tags": "Etiquetas",
+    "tableOfContents": "Índice",
+    "relatedPosts": "Artículos relacionados",
+    "backToBlog": "Volver a las publicaciones recientes",
+    "popularTags": "Comienza con nuestras etiquetas populares",
+    "allTags": "Todas las etiquetas",
+    "tagsDescription": "Explora todas las publicaciones del blog por etiquetas",
+    "posts": "publicaciones",
+    "previousPost": "Publicación anterior",
+    "nextPost": "Siguiente publicación"
+  },
+  "contact": {
+    "title": "Contáctenos",
+    "description": "Si tiene alguna pregunta o necesidad, no dude en ponerse en contacto con nosotros. Nuestro equipo estará encantado de atenderle.",
+    "company": "Sede central de la empresa",
+    "address": "Ningbo, Zhejiang, China",
+    "phone": "Número de contacto",
+    "email": "Correo electrónico",
+    "office": "Dirección de la oficina",
+    "officeAddress": "Edificio A, Parque de Investigación y Desarrollo, Zona de Alta Tecnología, Ningbo, Zhejiang, China",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "company": "Empresa",
+      "phone": "Teléfono",
+      "message": "Mensaje",
+      "submit": "Enviar",
+      "submitting": "Enviando...",
+      "placeholder": {
+        "name": "John Smith",
+        "email": "johnsmith@company.com",
+        "company": "Nombre de la empresa",
+        "phone": "+1-1212345678",
+        "message": "Me gustaría conocer detalles sobre los amortiguadores de gas de acero inoxidable. Los requisitos técnicos para nuestro proyecto actual son..."
+      },
+      "validation": {
+        "name": {
+          "required": "Por favor, ingrese su nombre",
+          "min": "El nombre debe tener al menos 2 caracteres",
+          "max": "El nombre no puede superar 50 caracteres",
+          "invalid": "El nombre contiene caracteres no válidos"
+        },
+        "email": {
+          "required": "Por favor, ingrese su dirección de correo electrónico",
+          "invalid": "Por favor, ingrese una dirección de correo electrónico válida",
+          "tempEmail": "No se permiten direcciones de correo electrónico temporales"
+        },
+        "company": {
+          "length": "El nombre de la empresa debe tener entre 2-100 caracteres",
+          "invalid": "El nombre de la empresa contiene caracteres no válidos"
+        },
+        "phone": {
+          "invalid": "Por favor, ingrese un número de teléfono válido"
+        },
+        "message": {
+          "min": "El mensaje debe tener al menos 10 caracteres",
+          "max": "El mensaje no puede superar 1000 caracteres",
+          "sensitive": "El mensaje contiene palabras inapropiadas"
+        }
+      }
+    },
+    "success": {
+      "title": "Envío exitoso",
+      "message": "Gracias por su mensaje, nos pondremos en contacto con usted lo antes posible.",
+      "description": "En breve nos pondremos en contacto con usted."
+    },
+    "error": {
+      "title": "Error en el envío",
+      "message": "Lo sentimos, el envío falló. Por favor, inténtelo de nuevo más tarde.",
+      "tooFrequent": {
+        "title": "Envío demasiado frecuente",
+        "description": "Espere {seconds} segundos antes de intentar nuevamente"
+      }
+    }
+  },
+  "footer": {
+    "description": "Soluciones profesionales de gas springs para la fabricación global",
+    "quickLinks": "Enlaces rápidos",
+    "legal": "Legal",
+    "terms": "Términos de uso",
+    "privacy": "Política de privacidad"
+  },
+  "error": {
+    "notFoundTitle": "Página no encontrada",
+    "notFoundDescription": "Lo sentimos, la página que estás buscando no existe o ha sido movida.",
+    "backToHome": "Volver a la página principal"
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "description": "Esta Política de Privacidad explica cómo recopilamos, utilizamos, procesamos y protegemos sus datos cuando interactúa con nuestros servicios."
+  },
+  "terms": {
+    "title": "Terms of Use",
+    "description": "Un acuerdo completo que abarca los Términos de Servicio, atribución de responsabilidad, privacidad de datos, políticas de productos (pedido/entrega/devoluciones/garantía), descargo de responsabilidad y ley aplicable."
+  }
+}

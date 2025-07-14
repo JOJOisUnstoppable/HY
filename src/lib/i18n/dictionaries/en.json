@@ -1,0 +1,177 @@
+{
+  "common": {
+    "home": "Home",
+    "products": "Products",
+    "applications": "Application",
+    "blog": "Blog",
+    "contact": "Contact Us",
+    "allProducts": "All Products",
+    "showProducts": "A rich and complete product line",
+    "viewAll": "View All Tags"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Leading Technology",
+      "title": "xxx Precision Industrial Component Solutions",
+      "subtitle": "Making Industrial Connections More Excellent",
+      "ctaContact": "Get Custom Proposal Now",
+      "ctaProduct": "Explore Our Products"
+    },
+    "service": {
+      "title": "Customized Service Process",
+      "description": "We provide comprehensive customization services from design to production, ensuring each product perfectly meets your requirements",
+      "steps": {
+        "stepOne": {
+          "title": "Requirement Analysis",
+          "description": "We understand your requirements and industry needs."
+        },
+        "stepTwo": {
+          "title": "Solution Design",
+          "description": "We design customized gas spring solutions that are specifically designed to meet your unique requirements."
+        },
+        "stepThree": {
+          "title": "Sample Confirmation",
+          "description": "We provide free samples for testing and confirmation."
+        },
+        "stepFour": {
+          "title": "Batch Production",
+          "description": "We strictly follow ISO 9001:2000 standard, ensuring high quality and performance for each product."
+        }
+      }
+    },
+
+    "features": {
+      "title": "Why Choose XXX One-Stop Solutions",
+      "description": "For 20 Years of Trusted Industrial Expertise",
+      "items": [
+        {
+          "title": "Customize Expertise",
+          "description": "200+ R&D experts, 2,000+ self-developed molds, and 24-hour response for tailored non-standard solutions across industries." 
+        },
+        {
+          "title": "Quality Excellence",
+          "description": "ISO-certified (9001, TS16949, etc.) with precision testing—trusted by Huawei, Geely, and Philips via 101 patents."
+        },
+        {
+          "title": "Technical Excellence",
+          "description": "60+ senior technicians and advanced facilities drive leading precision in plastic fasteners and mold tech."
+        },
+        {
+          "title": "Global Services",
+          "description": "Supporting 10,000+ global clients with 24/7 support and seamless delivery worldwide."
+        }
+      ]
+    }
+  },
+  "categoryViewMore": "View More",
+  "spotlights": {
+    "solarDamperShort": "Solar Damper",
+    "solarDamperLong": "A comprehensive solution for solar damper systems, check full whitepaper now"
+  },
+  "applications": {
+    "title": "Application",
+    "description": "Discover Our Industrial Component Applications",
+    "descriptionLabel": "Application Description",
+    "solutionLabel": "Industrial Component Solution",
+    "relatedPostsLabel": "Related Posts with Cases Reference",
+    "noRelatedPosts": "Non related posts in current language",
+    "viewMoreString": "Contact Us to Get More Info"
+  },
+  "blog": {
+    "description": "Our Insight of Gas Spring Industry and Products",
+    "tags": "Tags",
+    "tableOfContents": "Table of contents",
+    "relatedPosts": "Related Posts",
+    "backToBlog": "Back to Recent Posts",
+    "popularTags": "Get started with our popular tags",
+    "allTags": "All Tags",
+    "tagsDescription": "Browse all blog posts by tags",
+    "posts": "posts",
+    "previousPost": "Previous Post",
+    "nextPost": "Next Post"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "If you have any questions or needs, please feel free to contact us. Our team will be happy to assist you.",
+    "company": "Company HQ",
+    "address": "Ningbo, Zhejiang, China",
+    "phone": "Contact Number",
+    "email": "Email",
+    "office": "Office Address",
+    "officeAddress": "Building A, R&D Park, High-Tech Zone, Ningbo, Zhejiang, China",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "company": "Company",
+      "phone": "Phone",
+      "message": "Message",
+      "submit": "Submit",
+      "submitting": "Submitting...",
+      "placeholder": {
+        "name": "John Smith",
+        "email": "johnsmith@company.com",
+        "company": "Company Name",
+        "phone": "+1-1212345678",
+        "message": "I'd like to know detail of stainless steel gas springs. The technical requirements for our current project are..."
+      },
+      "validation": {
+        "name": {
+          "required": "Please enter your name",
+          "min": "Name must be at least 2 characters",
+          "max": "Name cannot exceed 50 characters",
+          "invalid": "Name contains invalid characters"
+        },
+        "email": {
+          "required": "Please enter your email address",
+          "invalid": "Please enter a valid email address",
+          "tempEmail": "Temporary email addresses are not allowed"
+        },
+        "company": {
+          "length": "Company name must be between 2-100 characters",
+          "invalid": "Company name contains invalid characters"
+        },
+        "phone": {
+          "invalid": "Please enter a valid phone number"
+        },
+        "message": {
+          "min": "Message must be at least 10 characters",
+          "max": "Message cannot exceed 1000 characters",
+          "sensitive": "Message contains inappropriate words"
+        }
+      }
+    },
+    "success": {
+      "title": "Submission Successful",
+      "message": "Thank you for your message. We will get back to you as soon as possible.",
+      "description": "We will contact you as soon as possible."
+    },
+    "error": {
+      "title": "Submission Failed",
+      "message": "Sorry, the submission failed. Please try again later.",
+      "tooFrequent": {
+        "title": "Submission too frequent",
+        "description": "Please wait {seconds} seconds before trying again"
+      }
+    }
+  },
+  "footer": {
+    "description": "Professional Industrial Component Solutions for Global Manufacturing",
+    "quickLinks": "Quick Links",
+    "legal": "Legal",
+    "terms": "Terms of Use",
+    "privacy": "Privacy Policy"
+  },
+  "error": {
+    "notFoundTitle": "Page Not Found",
+    "notFoundDescription": "Sorry, the page you are looking for doesn't exist or has been moved.",
+    "backToHome": "Back to Home"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "description": "This Privacy Policy explains how we collect, use, process, and protect your data when you interact with our services."
+  },
+  "terms": {
+    "title": "Terms of Use",
+    "description": "A complete agreement covering Terms of Service, liability attribution, data privacy, product policies (ordering/delivery/returns/warranty), disclaimer, and governing law."
+  }
+}
