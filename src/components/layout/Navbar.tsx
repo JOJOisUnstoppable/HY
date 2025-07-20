@@ -22,6 +22,27 @@ import { cn } from '@/lib/utils'
 import LanguageSwitcher from '../shared/LanguageSwitcher'
 import Image from 'next/image'
 
+function ListItem({
+  title,
+  children,
+  href,
+  ...props
+}: React.ComponentPropsWithoutRef<"li"> & { href: string }) {
+  return (
+    <li {...props}>
+      <NavigationMenuLink asChild>
+        <Link href={href}>
+          <div className="text-sm leading-none font-medium">{title}</div>
+          <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
+            {children}
+          </p>
+        </Link>
+      </NavigationMenuLink>
+    </li>
+  )
+}
+
+
 interface NavItem {
   title: string
   href: string
@@ -29,6 +50,7 @@ interface NavItem {
     id: string
     title: string
     description: string
+    image: string
   }[]
 }
 
@@ -50,7 +72,7 @@ interface NavbarDictionary {
 export function Navbar({ locale, dict, categories }: {
   locale: string,
   dict: NavbarDictionary,
-  categories: { id: string; title: string; description: string }[]
+  categories: { id: string; title: string; description: string; image: string }[]
 }) {
   const pathname = usePathname()
 
@@ -72,33 +94,63 @@ export function Navbar({ locale, dict, categories }: {
         <NavigationMenu key={item.href}>
           <NavigationMenuList>
             <NavigationMenuItem>
+              {/* 按钮 */}
               <NavigationMenuTrigger className={cn(
                 "transition-colors hover:text-foreground/80 text-sm font-medium",
                 pathname === item.href ? "text-foreground" : "text-foreground/60",
                 "bg-transparent hover:bg-transparent"
               )}>
                 {item.title}
-              </NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className="grid w-[250px] gap-2 p-1">
-                  {item.categories.map((category) => (
-                    <li key={category.id}>
-                      <NavigationMenuLink asChild>
-                        <Link
-                          href={`/${locale}/products/category/${category.id}`}
-                          className="block py-2 px-3 hover:bg-accent rounded-md"
-                        >
-                          <div>
-                            <div>{category.title}</div>
-                            <div className="text-sm text-muted-foreground">
-                              {category.description}
-                            </div>
-                          </div>
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                  ))}
-                </ul>
+              </NavigationMenuTrigger >
+              {/* 下拉菜单 */}
+              <NavigationMenuContent >
+                <div className="flex gap-6 w-[80vw] p-4">
+                  {/* 左侧：item.categories 5列布局 */}
+                  <div className="flex-1">
+                    <div className="grid grid-cols-5 gap-2">
+                      {item.categories.map((category) => (
+                        <div key={category.id} className="">
+                          <NavigationMenuLink asChild>
+                          <Link
+                              href={`/${locale}/products/category/${category.id}`}
+                              className="block p-0 hover:bg-accent rounded-lg border border-border/50 hover:border-border transition-all duration-200 group"
+                            >
+                              {/* 图片区域 */}
+                              <div className="relative w-full h-24 rounded-md mb-3 overflow-hidden">
+                                <Image
+                                  src={category.image}
+                                  alt={category.title}
+                                  fill
+                                  style={{ objectFit: 'cover' }}
+                                  className="transition-transform duration-200 group-hover:scale-105"
+                                />
+                              </div>
+                              {/* 标题区域 */}
+                              <div className="text-sm font-medium text-center group-hover:text-primary transition-colors duration-200">
+                                {category.title}
+                              </div>
+                            </Link>
+                          </NavigationMenuLink>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  {/* 右侧：图片内容 */}
+                  <div className="w-64 border-l pl-6">
+                    <div className="space-y-2">
+                      <div className="relative w-96 h-96 ml-20 rounded-md overflow-hidden">
+                        <Image
+                          src="/images/product/navbar/big-fastener.jpg"
+                          alt="All Fastener"
+                          fill
+                          style={{ objectFit: 'cover' }}
+                          className="transition-transform duration-200 group-hover:scale-105"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </NavigationMenuContent>
             </NavigationMenuItem>
           </NavigationMenuList>
@@ -107,23 +159,16 @@ export function Navbar({ locale, dict, categories }: {
     }
 
     return (
-      <NavigationMenu key={item.href}>
-        <NavigationMenuList>
-          <NavigationMenuItem>
-            <NavigationMenuLink asChild>
-              <Link
-                href={item.href}
-                className={cn(
-                  "transition-colors hover:text-foreground/80 text-sm font-medium px-4 py-2",
-                  pathname === item.href ? "text-foreground" : "text-foreground/60"
-                )}
-              >
-                {item.title}
-              </Link>
-            </NavigationMenuLink>
-          </NavigationMenuItem>
-        </NavigationMenuList>
-      </NavigationMenu>
+      <Link
+        key={item.href}
+        href={item.href}
+        className={cn(
+          "transition-colors hover:text-foreground/80 text-sm font-medium px-4 py-2",
+          pathname === item.href ? "text-foreground" : "text-foreground/60"
+        )}
+      >
+        {item.title}
+      </Link>
     )
   }
 

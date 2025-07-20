@@ -8,6 +8,7 @@ interface ProductCategory {
   title: string
   description: string
   image: string
+  images: string[] // 新增：存储所有图片路径
   order: number
 }
 
@@ -17,6 +18,15 @@ interface Product {
   description: string
   category: string
   image: string
+  images: string[]
+}
+
+// 添加 Feature 接口
+interface Feature {
+  id: number
+  name: string
+  description: string
+  icon: React.ReactNode
 }
 
 interface ProductData {
@@ -30,9 +40,23 @@ export async function getProductData(locale: Locale): Promise<ProductData> {
   const fileContent = fs.readFileSync(filePath, 'utf8')
   const { data, content } = matter(fileContent)
   
+  // 处理categories的image字段 - categories是单个图片路径
+  const processedCategories = (data.categories || []).map((category: any) => ({
+    ...category,
+    images: category.image ? [category.image.trim()] : [], // categories只有一张图片
+    image: category.image ? category.image.trim() : '' // 直接使用原始路径
+  }))
+  
+  // 处理items的image字段 - items是逗号分隔的多个图片路径
+  const processedItems = (data.items || []).map((item: any) => ({
+    ...item,
+    images: item.image ? item.image.split(',').map((img: string) => img.trim()) : [],
+    image: item.image ? item.image.split(',')[0].trim() : '' // 使用第一张图片作为主图
+  }))
+  
   return {
-    categories: data.categories || [],
-    items: data.items || [],
+    categories: processedCategories,
+    items: processedItems,
     content
   }
 }

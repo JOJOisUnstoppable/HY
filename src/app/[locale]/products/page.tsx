@@ -11,10 +11,7 @@ export default async function ProductsPage(
   }
 ) {
   const params = await props.params;
-
-  const {
-    locale
-  } = params;
+  const { locale } = params;
 
   const dict = await getDictionary(locale)
   const { categories, content } = await getProductData(locale)
@@ -24,17 +21,15 @@ export default async function ProductsPage(
       <ProductAllHero 
         title={dict.common.products}
         description={dict.home.hero.subtitle}
-        image="/images/hero-bg.jpg"  // 传入分类图片
+        image="/images/hero-bg.jpg"
         dict={dict}
         locale={locale}
       />
       <div className="container max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-
         <div className="text-center mb-12">
           <div className="text-gray-600 max-w-2xl mx-auto prose"
             dangerouslySetInnerHTML={{ __html: content }} />
         </div>
-
 
         <BentoGrid className="grid-cols-1 lg:grid-cols-12 auto-rows-[310px] lg:auto-rows-[430px] [&>*]:transition-[grid-column] [&>*]:duration-500">
           {categories
@@ -46,7 +41,8 @@ export default async function ProductsPage(
                   id: category.id,
                   name: category.title,
                   description: category.description,
-                  image: category.image
+                  image: category.image, // 现在是处理后的第一张图片
+                  images: category.images // 传递所有图片
                 }}
                 locale={locale}
                 viewMore={dict.categoryViewMore}
@@ -55,6 +51,5 @@ export default async function ProductsPage(
         </BentoGrid>
       </div>
     </div>
-
   )
 }

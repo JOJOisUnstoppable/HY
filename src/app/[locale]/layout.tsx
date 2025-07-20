@@ -134,7 +134,8 @@ export default async function LocaleLayout(
           categories={categories.map(cat => ({
             id: cat.id,
             title: cat.title,
-            description: cat.description
+            description: cat.description,
+            image: cat.image
           }))} 
         />
         <main className="min-h-screen">
@@ -146,7 +147,8 @@ export default async function LocaleLayout(
           categories={categories.map(cat => ({
             id: cat.id,
             title: cat.title,
-            description: cat.description
+            description: cat.description,
+            image: cat.image
           }))}
         />
         <Toaster />

@@ -43,7 +43,7 @@ export default async function Home(
             <div className="text-gray-600 max-w-2xl mx-auto prose"
               dangerouslySetInnerHTML={{ __html: content }} />
           </div>
-          <BentoGrid className="grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-7 auto-rows-[12rem] [&>*]:transition-[grid-column] [&>*]:duration-500">
+          <BentoGrid className="grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 auto-rows-[12rem] [&>*]:transition-[grid-column] [&>*]:duration-500">
             {categories
               .sort((a, b) => a.order - b.order)
               .map((category) => (
