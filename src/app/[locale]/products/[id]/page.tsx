@@ -18,8 +18,8 @@ export default async function ProductPage(
 
   const productData = await getProductById(locale, id)
   const dict = await getDictionary(locale)
-  console.log("productData:", productData);
-  console.log("productID:", id);
+  // console.log("productData:", productData);
+  // console.log("productID:", id);
 
   // 处理产品未找到的情况
   if (!productData) {
@@ -30,14 +30,16 @@ export default async function ProductPage(
   const product = {
     title: productData.title,
     description: productData.description,
-    image: productData.image,
+    images: productData.images || [productData.image], // 使用 images 数组，如果不存在则将 image 转为数组
   }
 
   return (
+    <div>
     <ProductDetailPage
       product={product}
       dict={dict}
       locale={locale}
     />
+    </div>
   )
 }

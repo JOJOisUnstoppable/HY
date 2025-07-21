@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>NoSuchKey</Code>
+  <Message>The specified key does not exist.</Message>
+  <RequestId>687B8A13E9011931322207E4</RequestId>
+  <HostId>image.heyingen.com</HostId>
+  <Key>uploads/2024/10/extracted_6732beb9292cb/Plastic Single Color Button/AN-17/images/AN-17双色按钮透明 黑色(2).png</Key>
+  <EC>0026-00000001</EC>
+  <RecommendDoc>https://api.alibabacloud.com/troubleshoot?q=0026-00000001</RecommendDoc>
+</Error>
