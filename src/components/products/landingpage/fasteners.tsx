@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Head from 'next/head';
 import { useState } from 'react';
+import { BentoGrid } from "@/components/magicui/bento-grid";
 
 // Move these constant declarations outside
 const pageMetadata = {
@@ -65,11 +66,11 @@ const productSeries = [
 
 // 行业应用数据
 const industries = [
-  { name: 'Automotive', items: ['Engine mounting bolts', 'Interior trim screws', 'Chassis rivets'] },
-  { name: 'Construction', items: ['Structural bolts for steel frames', 'Concrete anchors', 'Roofing screws'] },
-  { name: 'Electronics', items: ['Micro screws for circuit boards', 'Connector clips', 'Battery compartment fasteners'] },
-  { name: 'Aerospace', items: ['Titanium bolts for airframes', 'High-strength rivets for wings', 'Lock nuts for avionics'] },
-  { name: 'Medical Devices', items: ['Stainless steel screws for equipment', 'Sterile fasteners for surgical tools'] }
+  { name: 'Automotive', items: ['Engine mounting bolts', 'Interior trim screws', 'Chassis rivets'], color: 'from-blue-500 to-blue-700' },
+  { name: 'Construction', items: ['Structural bolts for steel frames', 'Concrete anchors', 'Roofing screws'], color: 'from-orange-500 to-orange-700' },
+  { name: 'Electronics', items: ['Micro screws for circuit boards', 'Connector clips', 'Battery compartment fasteners'], color: 'from-green-500 to-green-700' },
+  { name: 'Aerospace', items: ['Titanium bolts for airframes', 'High-strength rivets for wings', 'Lock nuts for avionics'], color: 'from-purple-500 to-purple-700' },
+  { name: 'Medical Devices', items: ['Stainless steel screws for equipment', 'Sterile fasteners for surgical tools'], color: 'from-red-500 to-red-700' }
 ];
 
 export default function FastenersPage() {
@@ -82,151 +83,250 @@ export default function FastenersPage() {
 
   return (
     <>
-      <main>
+      <main className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
+        {/* Hero Section */}
+        <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
+          <div className="absolute inset-0 bg-[url('/images/hero-bg.jpg')] bg-cover bg-center opacity-10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent" />
+          <div className="relative container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div className="max-w-4xl">
+              <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                Professional
+                <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent"> Fastening </span>
+                Solutions
+              </h1>
+              <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-2xl">
+                Comprehensive fastening solutions for industrial assembly, construction, and manufacturing. High-quality screws, bolts, nuts, and more.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+                  Explore Products
+                </button>
+                <button className="border-2 border-white/30 text-white px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition-all duration-300">
+                  Technical Specs
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* 什么是紧固件 */}
-        <section id="what-is" className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">What is a Fastener?</h2>
-            <div className="max-w-3xl mx-auto">
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                Fasteners are mechanical components used to join or secure two or more objects together. They create non-permanent or permanent connections, allowing for easy assembly, disassembly, or maintenance when needed.
-              </p>
-              <p className="text-gray-700 leading-relaxed">
-                Common types include screws, bolts, nuts, washers, rivets, and clips, each designed for specific load, material, and environmental conditions. Fasteners work by creating clamping force, friction, or mechanical interlock to prevent separation of connected parts.
-              </p>
+        <section id="what-is" className="relative py-24 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-transparent to-purple-50/50" />
+          <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full mb-6">
+                <span className="text-2xl">🔩</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">
+                What is a Fastener?
+              </h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 mx-auto mb-8" />
+            </div>
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-xl border border-white/20">
+                <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+                  Fasteners are mechanical components used to join or secure two or more objects together. They create non-permanent or permanent connections, allowing for easy assembly, disassembly, or maintenance when needed.
+                </p>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Common types include screws, bolts, nuts, washers, rivets, and clips, each designed for specific load, material, and environmental conditions. Fasteners work by creating clamping force, friction, or mechanical interlock to prevent separation of connected parts.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
         {/* 为什么选择高质量紧固件 */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Why Choose High-Quality Fasteners?</h2>
+        <section className="py-24 bg-gradient-to-br from-slate-100 to-blue-50">
+          <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-full mb-6">
+                <span className="text-2xl">⭐</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">
+                Why Choose High-Quality Fasteners?
+              </h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-red-500 mx-auto mb-8" />
+            </div>
             
-            <div className="overflow-x-auto mb-12">
-              <table className="min-w-full bg-white rounded-lg overflow-hidden shadow-md">
-                <thead className="bg-gray-100">
-                  <tr>
-                    <th className="py-3 px-6 text-left text-gray-700 font-semibold">Fastener Quality</th>
-                    <th className="py-3 px-6 text-left text-gray-700 font-semibold">Load Capacity</th>
-                    <th className="py-3 px-6 text-left text-gray-700 font-semibold">Corrosion Resistance</th>
-                    <th className="py-3 px-6 text-left text-gray-700 font-semibold">Durability</th>
-                    <th className="py-3 px-6 text-left text-gray-700 font-semibold">Applications</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-200">
-                  <tr className="hover:bg-gray-50 transition-colors">
-                    <td className="py-4 px-6 font-medium text-gray-800">High-Quality</td>
-                    <td className="py-4 px-6 text-gray-600">Meets/exceeds industry standards (e.g., ISO 898)</td>
-                    <td className="py-4 px-6 text-gray-600">Premium coatings (zinc, nickel) or materials (stainless steel)</td>
-                    <td className="py-4 px-6 text-gray-600">Resists fatigue, vibration loosening</td>
-                    <td className="py-4 px-6 text-gray-600">Industrial machinery, aerospace, medical equipment</td>
-                  </tr>
-                  <tr className="hover:bg-gray-50 transition-colors">
-                    <td className="py-4 px-6 font-medium text-gray-800">Low-Grade</td>
-                    <td className="py-4 px-6 text-gray-600">Inconsistent, often below safety thresholds</td>
-                    <td className="py-4 px-6 text-gray-600">Minimal/no protection, prone to rust</td>
-                    <td className="py-4 px-6 text-gray-600">Fails prematurely under cyclic loads</td>
-                    <td className="py-4 px-6 text-gray-600">Temporary fixtures, non-critical DIY projects</td>
-                  </tr>
-                  <tr className="hover:bg-gray-50 transition-colors">
-                    <td className="py-4 px-6 font-medium text-gray-800">Generic</td>
-                    <td className="py-4 px-6 text-gray-600">Moderate but unreliable load handling</td>
-                    <td className="py-4 px-6 text-gray-600">Basic plating, limited lifespan</td>
-                    <td className="py-4 px-6 text-gray-600">Adequate for light, static loads</td>
-                    <td className="py-4 px-6 text-gray-600">Furniture assembly, non-structural parts</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div className="bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden shadow-xl border border-white/20 mb-16">
+              <div className="overflow-x-auto">
+                <table className="min-w-full">
+                  <thead className="bg-gradient-to-r from-slate-800 to-slate-700">
+                    <tr>
+                      <th className="py-6 px-8 text-left text-white font-bold text-lg">Fastener Quality</th>
+                      <th className="py-6 px-8 text-left text-white font-bold text-lg">Load Capacity</th>
+                      <th className="py-6 px-8 text-left text-white font-bold text-lg">Corrosion Resistance</th>
+                      <th className="py-6 px-8 text-left text-white font-bold text-lg">Durability</th>
+                      <th className="py-6 px-8 text-left text-white font-bold text-lg">Applications</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-200">
+                    <tr className="hover:bg-gradient-to-r hover:from-green-50 hover:to-emerald-50 transition-all duration-300">
+                      <td className="py-6 px-8 font-bold text-green-700 text-lg">High-Quality</td>
+                      <td className="py-6 px-8 text-gray-700">Meets/exceeds industry standards (e.g., ISO 898)</td>
+                      <td className="py-6 px-8 text-gray-700">Premium coatings (zinc, nickel) or materials (stainless steel)</td>
+                      <td className="py-6 px-8 text-gray-700">Resists fatigue, vibration loosening</td>
+                      <td className="py-6 px-8 text-gray-700">Industrial machinery, aerospace, medical equipment</td>
+                    </tr>
+                    <tr className="hover:bg-gradient-to-r hover:from-red-50 hover:to-pink-50 transition-all duration-300">
+                      <td className="py-6 px-8 font-bold text-red-700 text-lg">Low-Grade</td>
+                      <td className="py-6 px-8 text-gray-700">Inconsistent, often below safety thresholds</td>
+                      <td className="py-6 px-8 text-gray-700">Minimal/no protection, prone to rust</td>
+                      <td className="py-6 px-8 text-gray-700">Fails prematurely under cyclic loads</td>
+                      <td className="py-6 px-8 text-gray-700">Temporary fixtures, non-critical DIY projects</td>
+                    </tr>
+                    <tr className="hover:bg-gradient-to-r hover:from-yellow-50 hover:to-orange-50 transition-all duration-300">
+                      <td className="py-6 px-8 font-bold text-yellow-700 text-lg">Generic</td>
+                      <td className="py-6 px-8 text-gray-700">Moderate but unreliable load handling</td>
+                      <td className="py-6 px-8 text-gray-700">Basic plating, limited lifespan</td>
+                      <td className="py-6 px-8 text-gray-700">Adequate for light, static loads</td>
+                      <td className="py-6 px-8 text-gray-700">Furniture assembly, non-structural parts</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
 
-            <div className="max-w-3xl mx-auto">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Technical Specifications</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="font-medium text-gray-700 mb-2">Common Specifications:</h4>
-                  <ul className="list-disc pl-5 text-gray-600 space-y-1">
-                    <li>Thread Size (Metric: M1.6-M30; Imperial: #0-1/2")</li>
-                    <li>Tensile Strength (4.8-12.9 grade for bolts)</li>
-                    <li>Drive Type (Phillips, hex, torx, square)</li>
-                    <li>Head Style (Countersunk, pan, hexagon)</li>
-                    <li>Length (5mm-300mm)</li>
-                  </ul>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/20">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-white font-bold">📊</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-800">Common Specifications</h3>
                 </div>
-                <div>
-                  <h4 className="font-medium text-gray-700 mb-2">Performance Characteristics:</h4>
-                  <ul className="list-disc pl-5 text-gray-600 space-y-1">
-                    <li>Torque Requirements (varies by size/grade)</li>
-                    <li>Shear Strength (resistance to lateral forces)</li>
-                    <li>Fatigue Life (cycles before failure under repeated load)</li>
-                    <li>Temperature Resistance (as per material)</li>
-                  </ul>
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    Thread Size (Metric: M1.6-M30; Imperial: #0-1/2")
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    Tensile Strength (4.8-12.9 grade for bolts)
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    Drive Type (Phillips, hex, torx, square)
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    Head Style (Countersunk, pan, hexagon)
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    Length (5mm-300mm)
+                  </li>
+                </ul>
+              </div>
+              <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/20">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-white font-bold">⚡</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-800">Performance Characteristics</h3>
                 </div>
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    Torque Requirements (varies by size/grade)
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    Shear Strength (resistance to lateral forces)
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    Fatigue Life (cycles before failure under repeated load)
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    Temperature Resistance (as per material)
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </section>
 
         {/* 产品系列 */}
-        <section id="products" className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-gray-800 mb-2 text-center">Our Fastener Product Series</h2>
-            <p className="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-              Our product range covers diverse fastener types for every application
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <section id="products" className="relative py-24 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/50 via-transparent to-cyan-50/50" />
+          <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full mb-6">
+                <span className="text-2xl">🛠️</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">
+                Our Fastener Product Series
+              </h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto mb-8" />
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Our product range covers diverse fastener types for every application
+              </p>
+            </div>
+            <BentoGrid className="grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 auto-rows-[20rem] gap-6">
               {productSeries.map((product, index) => (
                 <div 
                   key={index} 
-                  className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+                  className="group bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 border border-white/20 hover:scale-105"
                 >
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold text-gray-800 mb-3">{product.title}</h3>
-                    <p className="text-gray-600 mb-3">{product.details}</p>
-                    <div>
-                      <span className="text-sm font-medium text-gray-500">Applications:</span>
-                      <p className="text-gray-600">{product.applications}</p>
+                  <div className="p-8 h-full flex flex-col relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-16 translate-x-16 opacity-50 group-hover:scale-150 transition-transform duration-500" />
+                    <h3 className="text-2xl font-bold text-gray-800 mb-4 relative z-10">{product.title}</h3>
+                    <p className="text-gray-600 mb-4 flex-grow relative z-10 leading-relaxed">{product.details}</p>
+                    <div className="relative z-10">
+                      <span className="text-sm font-semibold text-blue-600 uppercase tracking-wide">Applications:</span>
+                      <p className="text-gray-700 mt-1">{product.applications}</p>
                     </div>
                   </div>
                 </div>
               ))}
-            </div>
+            </BentoGrid>
           </div>
         </section>
 
         {/* 紧固件工作原理 */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">How Do Fasteners Work?</h2>
+        <section className="py-24 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 relative overflow-hidden">
+          <div className="absolute inset-0 bg-[url('/images/hero-bg.jpg')] bg-cover bg-center opacity-5" />
+          <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full mb-6">
+                <span className="text-2xl">⚙️</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+                How Do Fasteners Work?
+              </h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-400 mx-auto mb-8" />
+            </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              <div className="bg-gray-50 p-6 rounded-lg border border-gray-100">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-blue-600 font-bold text-xl">1</span>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              <div className="group bg-white/10 backdrop-blur-sm p-8 rounded-3xl border border-white/20 hover:bg-white/20 transition-all duration-500">
+                <div className="w-16 h-16 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <span className="text-white font-bold text-2xl">1</span>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Clamping Force</h3>
-                <p className="text-gray-600">
+                <h3 className="text-2xl font-bold text-white mb-4">Clamping Force</h3>
+                <p className="text-gray-300 leading-relaxed">
                   Bolts and screws generate tension when tightened, pulling joined parts together. The friction between surfaces prevents slippage, while the fastener's tensile strength resists separation forces.
                 </p>
               </div>
               
-              <div className="bg-gray-50 p-6 rounded-lg border border-gray-100">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-blue-600 font-bold text-xl">2</span>
+              <div className="group bg-white/10 backdrop-blur-sm p-8 rounded-3xl border border-white/20 hover:bg-white/20 transition-all duration-500">
+                <div className="w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <span className="text-white font-bold text-2xl">2</span>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Mechanical Interlock</h3>
-                <p className="text-gray-600">
+                <h3 className="text-2xl font-bold text-white mb-4">Mechanical Interlock</h3>
+                <p className="text-gray-300 leading-relaxed">
                   Rivets deform to create a permanent bulge, locking parts in place. Threaded fasteners (nuts/bolts) use helical threads to convert rotational force into linear clamping pressure.
                 </p>
               </div>
               
-              <div className="bg-gray-50 p-6 rounded-lg border border-gray-100">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-blue-600 font-bold text-xl">3</span>
+              <div className="group bg-white/10 backdrop-blur-sm p-8 rounded-3xl border border-white/20 hover:bg-white/20 transition-all duration-500">
+                <div className="w-16 h-16 bg-gradient-to-r from-orange-400 to-red-400 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <span className="text-white font-bold text-2xl">3</span>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Friction Enhancement</h3>
-                <p className="text-gray-600">
+                <h3 className="text-2xl font-bold text-white mb-4">Friction Enhancement</h3>
+                <p className="text-gray-300 leading-relaxed">
                   Washers increase surface area, distributing load and reducing loosening from vibration. Lock nuts feature nylon inserts or deformed threads to create extra friction.
                 </p>
               </div>
@@ -235,135 +335,118 @@ export default function FastenersPage() {
         </section>
 
         {/* 组件详情和材料规格 */}
-        <section id="specifications" className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Component Details and Material Specifications</h2>
-            
-            <div className="overflow-x-auto mb-12">
-              <table className="min-w-full bg-white rounded-lg overflow-hidden shadow-md">
-                <thead className="bg-gray-100">
-                  <tr>
-                    <th className="py-3 px-6 text-left text-gray-700 font-semibold">NO</th>
-                    <th className="py-3 px-6 text-left text-gray-700 font-semibold">Component</th>
-                    <th className="py-3 px-6 text-left text-gray-700 font-semibold">Material</th>
-                    <th className="py-3 px-6 text-left text-gray-700 font-semibold">Function</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-200">
-                  <tr className="hover:bg-gray-50 transition-colors">
-                    <td className="py-4 px-6 text-gray-600">1</td>
-                    <td className="py-4 px-6 font-medium text-gray-800">Screw Head</td>
-                    <td className="py-4 px-6 text-gray-600">Carbon Steel/Stainless Steel</td>
-                    <td className="py-4 px-6 text-gray-600">Tool engagement for tightening/loosening</td>
-                  </tr>
-                  <tr className="hover:bg-gray-50 transition-colors">
-                    <td className="py-4 px-6 text-gray-600">2</td>
-                    <td className="py-4 px-6 font-medium text-gray-800">Threaded Shank</td>
-                    <td className="py-4 px-6 text-gray-600">Alloy Steel/Brass</td>
-                    <td className="py-4 px-6 text-gray-600">Transmits clamping force via threads</td>
-                  </tr>
-                  <tr className="hover:bg-gray-50 transition-colors">
-                    <td className="py-4 px-6 text-gray-600">3</td>
-                    <td className="py-4 px-6 font-medium text-gray-800">Nut</td>
-                    <td className="py-4 px-6 text-gray-600">Mild Steel/Stainless Steel</td>
-                    <td className="py-4 px-6 text-gray-600">mates with bolt/screw to create clamping force</td>
-                  </tr>
-                  <tr className="hover:bg-gray-50 transition-colors">
-                    <td className="py-4 px-6 text-gray-600">4</td>
-                    <td className="py-4 px-6 font-medium text-gray-800">Washer</td>
-                    <td className="py-4 px-6 text-gray-600">Steel/Copper</td>
-                    <td className="py-4 px-6 text-gray-600">Distributes load, prevents surface damage</td>
-                  </tr>
-                  <tr className="hover:bg-gray-50 transition-colors">
-                    <td className="py-4 px-6 text-gray-600">5</td>
-                    <td className="py-4 px-6 font-medium text-gray-800">Rivet Body</td>
-                    <td className="py-4 px-6 text-gray-600">Aluminum/Steel</td>
-                    <td className="py-4 px-6 text-gray-600">Deforms to create permanent mechanical lock</td>
-                  </tr>
-                  <tr className="hover:bg-gray-50 transition-colors">
-                    <td className="py-4 px-6 text-gray-600">6</td>
-                    <td className="py-4 px-6 font-medium text-gray-800">Locking Insert (Lock Nuts)</td>
-                    <td className="py-4 px-6 text-gray-600">Nylon/Metal</td>
-                    <td className="py-4 px-6 text-gray-600">Prevents loosening via friction</td>
-                  </tr>
-                </tbody>
-              </table>
+        <section id="specifications" className="relative py-24 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-emerald-50/50 via-transparent to-teal-50/50" />
+          <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-full mb-6">
+                <span className="text-2xl">🔬</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">
+                Component Details and Material Specifications
+              </h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-emerald-600 to-teal-600 mx-auto mb-8" />
             </div>
-
-            <div className="max-w-3xl mx-auto">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Technical Specifications</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="font-medium text-gray-700 mb-2">Common Specifications:</h4>
-                  <ul className="list-disc pl-5 text-gray-600 space-y-1">
-                    <li>Thread Size (Metric: M1.6-M30; Imperial: #0-1/2")</li>
-                    <li>Tensile Strength (4.8-12.9 grade for bolts)</li>
-                    <li>Drive Type (Phillips, hex, torx, square)</li>
-                    <li>Head Style (Countersunk, pan, hexagon)</li>
-                    <li>Length (5mm-300mm)</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-medium text-gray-700 mb-2">Performance Characteristics:</h4>
-                  <ul className="list-disc pl-5 text-gray-600 space-y-1">
-                    <li>Torque Requirements (varies by size/grade)</li>
-                    <li>Shear Strength (resistance to lateral forces)</li>
-                    <li>Fatigue Life (cycles before failure under repeated load)</li>
-                    <li>Temperature Resistance (as per material)</li>
-                  </ul>
-                </div>
+            
+            <div className="bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden shadow-xl border border-white/20 mb-16">
+              <div className="overflow-x-auto">
+                <table className="min-w-full">
+                  <thead className="bg-gradient-to-r from-emerald-700 to-teal-700">
+                    <tr>
+                      <th className="py-6 px-8 text-left text-white font-bold text-lg">NO</th>
+                      <th className="py-6 px-8 text-left text-white font-bold text-lg">Component</th>
+                      <th className="py-6 px-8 text-left text-white font-bold text-lg">Material</th>
+                      <th className="py-6 px-8 text-left text-white font-bold text-lg">Function</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-200">
+                    {[
+                      { no: 1, component: 'Screw Head', material: 'Carbon Steel/Stainless Steel', function: 'Tool engagement for tightening/loosening' },
+                      { no: 2, component: 'Threaded Shank', material: 'Alloy Steel/Brass', function: 'Transmits clamping force via threads' },
+                      { no: 3, component: 'Nut', material: 'Mild Steel/Stainless Steel', function: 'mates with bolt/screw to create clamping force' },
+                      { no: 4, component: 'Washer', material: 'Steel/Copper', function: 'Distributes load, prevents surface damage' },
+                      { no: 5, component: 'Rivet Body', material: 'Aluminum/Steel', function: 'Deforms to create permanent mechanical lock' },
+                      { no: 6, component: 'Locking Insert (Lock Nuts)', material: 'Nylon/Metal', function: 'Prevents loosening via friction' }
+                    ].map((row, index) => (
+                      <tr key={index} className="hover:bg-gradient-to-r hover:from-emerald-50 hover:to-teal-50 transition-all duration-300">
+                        <td className="py-6 px-8 text-gray-700 font-bold text-lg">{row.no}</td>
+                        <td className="py-6 px-8 font-semibold text-gray-800 text-lg">{row.component}</td>
+                        <td className="py-6 px-8 text-gray-700">{row.material}</td>
+                        <td className="py-6 px-8 text-gray-700">{row.function}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
         </section>
 
         {/* 安装和使用指南 */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Installation and Usage Guidelines</h2>
+        <section className="py-24 bg-gradient-to-br from-slate-100 to-blue-50">
+          <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full mb-6">
+                <span className="text-2xl">📋</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">
+                Installation and Usage Guidelines
+              </h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-orange-500 mx-auto mb-8" />
+            </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                  </svg>
-                  Safety Precautions
-                </h3>
-                <ul className="list-disc pl-5 text-gray-600 space-y-2">
-                  <li>Use calibrated torque tools to avoid over/under-tightening</li>
-                  <li>Select fastener grade matching application load (e.g., 12.9 grade for high-stress joints)</li>
-                  <li>Inspect for thread damage before installation</li>
-                  <li>Wear protective gear when working with heavy-duty fasteners</li>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+              <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/20">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-gradient-to-r from-red-500 to-pink-500 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-white font-bold">⚠️</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-800">Safety Precautions</h3>
+                </div>
+                <ul className="space-y-4 text-gray-700">
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span><strong>Eye Protection:</strong> Always wear safety glasses when drilling or driving fasteners</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span><strong>Proper Tools:</strong> Use correct driver size to prevent cam-out and injury</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span><strong>Material Compatibility:</strong> Verify fastener material matches application environment</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span><strong>Load Limits:</strong> Never exceed manufacturer's specified load ratings</span>
+                  </li>
                 </ul>
               </div>
               
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  Installation Best Practices
-                </h3>
-                <ul className="list-disc pl-5 text-gray-600 space-y-2">
-                  <li>Clean mating surfaces to ensure proper clamping</li>
-                  <li>Apply thread lubricant for high-torque applications</li>
-                  <li>Align parts before tightening to prevent cross-threading</li>
-                  <li>Use washers with soft materials (aluminum, plastic) to avoid surface deformation</li>
-                </ul>
-              </div>
-              
-              <div className="md:col-span-2 mt-4">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  Operational Considerations
-                </h3>
-                <ul className="list-disc pl-5 text-gray-600 space-y-2">
-                  <li>Retorque fasteners after initial load cycles (e.g., in machinery break-in)</li>
-                  <li>Replace fasteners exposed to extreme heat or chemical corrosion</li>
-                  <li>Avoid mixing dissimilar metals to prevent galvanic reaction</li>
+              <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/20">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-white font-bold">✅</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-800">Best Practices</h3>
+                </div>
+                <ul className="space-y-4 text-gray-700">
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span><strong>Pre-drilling:</strong> Drill pilot holes for screws in hardwood or metal</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span><strong>Torque Control:</strong> Use torque wrench for critical applications</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span><strong>Thread Engagement:</strong> Ensure minimum 1.5x diameter thread engagement</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span><strong>Lubrication:</strong> Apply thread locker or anti-seize as specified</span>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -371,68 +454,71 @@ export default function FastenersPage() {
         </section>
 
         {/* 行业应用 */}
-        <section id="applications" className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Applications and Industries</h2>
+        <section id="applications" className="relative py-24 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-violet-50/50 via-transparent to-fuchsia-50/50" />
+          <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-violet-600 to-fuchsia-600 rounded-full mb-6">
+                <span className="text-2xl">🏭</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">
+                Industry Applications
+              </h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-violet-600 to-fuchsia-600 mx-auto mb-8" />
+            </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {industries.map((industry, index) => (
-                <div 
-                  key={index} 
-                  className="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow"
-                >
-                  <h3 className="text-xl font-semibold text-gray-800 mb-4">{industry.name}</h3>
-                  <ul className="list-disc pl-5 text-gray-600 space-y-1">
-                    {industry.items.map((item, i) => (
-                      <li key={i}>{item}</li>
+                <div key={index} className="group bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/20 hover:shadow-2xl transition-all duration-500 hover:scale-105">
+                  <div className={`w-16 h-16 bg-gradient-to-r ${industry.color} rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                    <span className="text-white font-bold text-xl">{industry.name.charAt(0)}</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-4">{industry.name}</h3>
+                  <ul className="space-y-3">
+                    {industry.items.map((item, itemIndex) => (
+                      <li key={itemIndex} className="flex items-start text-gray-700">
+                        <span className={`w-2 h-2 bg-gradient-to-r ${industry.color} rounded-full mt-2 mr-3 flex-shrink-0`}></span>
+                        {item}
+                      </li>
                     ))}
                   </ul>
                 </div>
               ))}
             </div>
-
-            <div className="max-w-3xl mx-auto mt-12 bg-blue-50 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-blue-800 mb-3">Key Benefits</h3>
-              <p className="text-gray-700">
-                Ensures structural integrity, enables modular assembly, reduces maintenance costs, enhances safety in critical systems, and supports efficient mass production.
-              </p>
-            </div>
           </div>
         </section>
 
         {/* 常见问题 */}
-        <section id="faq" className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Frequently Asked Questions</h2>
+        <section id="faq" className="py-24 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 relative overflow-hidden">
+          <div className="absolute inset-0 bg-[url('/images/hero-bg.jpg')] bg-cover bg-center opacity-5" />
+          <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full mb-6">
+                <span className="text-2xl">❓</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+                Frequently Asked Questions
+              </h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-400 mx-auto mb-8" />
+            </div>
             
-            <div className="max-w-3xl mx-auto space-y-4">
+            <div className="max-w-4xl mx-auto space-y-4">
               {faqs.map((faq, index) => (
-                <div 
-                  key={index} 
-                  className="border border-gray-200 rounded-lg overflow-hidden"
-                >
+                <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 overflow-hidden">
                   <button
-                    className="w-full flex justify-between items-center p-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors"
+                    className="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-white/20 transition-all duration-300"
                     onClick={() => toggleFaq(index)}
                   >
-                    <span className="font-medium text-gray-800">{faq.question}</span>
-                    <svg 
-                      xmlns="http://www.w3.org/2000/svg" 
-                      className={`h-5 w-5 text-gray-500 transition-transform ${expandedFaq === index ? 'transform rotate-180' : ''}`} 
-                      fill="none" 
-                      viewBox="0 0 24 24" 
-                      stroke="currentColor"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
+                    <span className="text-lg font-semibold text-white pr-4">{faq.question}</span>
+                    <span className={`text-cyan-400 text-2xl transition-transform duration-300 ${expandedFaq === index ? 'rotate-45' : ''}`}>
+                      +
+                    </span>
                   </button>
-                  <div 
-                    className={`px-4 overflow-hidden transition-all duration-300 ${
-                      expandedFaq === index ? 'max-h-40 py-4' : 'max-h-0'
-                    }`}
-                  >
-                    <p className="text-gray-600">{faq.answer}</p>
-                  </div>
+                  {expandedFaq === index && (
+                    <div className="px-8 pb-6 text-gray-300 leading-relaxed border-t border-white/10">
+                      <div className="pt-4">{faq.answer}</div>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
@@ -440,18 +526,29 @@ export default function FastenersPage() {
         </section>
 
         {/* 联系/咨询区域 */}
-        <section className="py-16 bg-blue-600 text-white">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-4">Need Fastening Solutions?</h2>
-            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Our experts are ready to help you find the perfect fasteners for your specific application.
-            </p>
-            <a 
-              href="/contact" 
-              className="inline-block bg-white text-blue-600 font-medium py-3 px-8 rounded-md hover:bg-blue-50 transition-colors shadow-lg"
-            >
-              Contact Our Team
-            </a>
+        <section className="relative py-24 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-transparent to-purple-50/50" />
+          <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div className="text-center">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mb-6">
+                <span className="text-2xl">📞</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">
+                Ready to Get Started?
+              </h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8" />
+              <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+                Contact our fastener experts for personalized recommendations and technical support for your specific application needs.
+              </p>
+              <div className="flex flex-wrap justify-center gap-6">
+                <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-10 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg text-lg">
+                  Get Technical Support
+                </button>
+                <button className="border-2 border-gray-300 text-gray-700 px-10 py-4 rounded-full font-semibold hover:bg-gray-50 transition-all duration-300 text-lg">
+                  Download Catalog
+                </button>
+              </div>
+            </div>
           </div>
         </section>
       </main>

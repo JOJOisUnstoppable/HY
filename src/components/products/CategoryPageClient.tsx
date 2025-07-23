@@ -4,6 +4,7 @@ import { ProductCard } from '@/components/products/ProductCard'
 import { ProductHero } from '@/components/products/ProductHero'
 import FastenersPage from '@/components/products/landingpage/fasteners'
 import { Locale } from '@/lib/i18n/config'
+import { BentoGrid } from "@/components/magicui/bento-grid"
 
 interface CategoryPageClientProps {
   category: any
@@ -20,33 +21,45 @@ export default function CategoryPageClient({
 }: CategoryPageClientProps) {
   return (
     <>
-      <ProductHero 
-        title={category.title}
-        description={category.description}
-        image={category.image}
-        dict={dict}
-        locale={locale}
-      />
-
-      {/* 文字部分 */}
-      <div className="mb-12 border-2 border-red-500">
-        <FastenersPage />
+      {/* 产品详细介绍部分 - 应用home页面的背景和布局风格 */}
+      <div className="relative bg-gray-50 py-16">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 via-transparent to-purple-50/30" />
+        <div className="absolute inset-0 bg-grid-slate-200/50 [mask-image:linear-gradient(0deg,transparent,black,transparent)] dark:bg-grid-slate-700/25" />
+        <div className="relative">
+          <FastenersPage />
+        </div>
       </div>
 
-      <div className="container max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {products.map((product) => (
-            <ProductCard
-              key={product.id}
-              product={{
-                id: product.id,
-                name: product.title,
-                description: product.description,
-                images: [product.image]
-              }}
-              locale={locale}
-            />
-          ))}
+      {/* 产品列表部分 - 应用home页面的容器和网格风格 */}
+      <div className="relative container max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 via-transparent to-purple-50/30" />
+        <div className="absolute inset-0 bg-grid-slate-200/50 [mask-image:linear-gradient(0deg,transparent,black,transparent)] dark:bg-grid-slate-700/25" />
+        <div className="relative">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">
+              {category.title} {dict.common.products || 'Products'}
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              {category.description}
+            </p>
+          </div>
+          
+          {/* 使用BentoGrid布局，与home页面保持一致 */}
+          <BentoGrid className="grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 auto-rows-[16rem] [&>*]:transition-[grid-column] [&>*]:duration-500">
+            {products.map((product) => (
+              <div key={product.id} className="group">
+                <ProductCard
+                  product={{
+                    id: product.id,
+                    name: product.title,
+                    description: product.description,
+                    images: [product.image]
+                  }}
+                  locale={locale}
+                />
+              </div>
+            ))}
+          </BentoGrid>
         </div>
       </div>
     </>
