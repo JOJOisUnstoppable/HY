@@ -5,7 +5,7 @@ import { CategoryCard } from '@/components/products/CategoryCard'
 import { getProductData } from '@/lib/products'
 import { ProductAllHero } from '@/components/products/ProductAllHero'
 import { BentoGrid } from "@/components/magicui/bento-grid"
-import FastenersPage from '@/components/products/landingpage/fasteners';
+import FastenersPage from '@/components/products/landingpage';
 
 export default async function ProductsPage(
   props: {

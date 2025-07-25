@@ -25,9 +25,9 @@ export function ProductCard({ product, locale }: ProductCardProps) {
       <MinimalCard>
         <MinimalCardImage src={product.images[0]} alt={product.name} />
         <MinimalCardTitle>{product.name}</MinimalCardTitle>
-        <MinimalCardDescription>
+        {/* <MinimalCardDescription>
           {product.description}
-        </MinimalCardDescription>
+        </MinimalCardDescription> */}
       </MinimalCard>
     </Link>
   )
