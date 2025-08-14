@@ -39,14 +39,13 @@
         }
       }
     },
-
     "features": {
       "title": "Why Choose XXX One-Stop Solutions",
       "description": "For 20 Years of Trusted Industrial Expertise",
       "items": [
         {
           "title": "Customize Expertise",
-          "description": "200+ R&D experts, 2,000+ self-developed molds, and 24-hour response for tailored non-standard solutions across industries." 
+          "description": "200+ R&D experts, 2,000+ self-developed molds, and 24-hour response for tailored non-standard solutions across industries."
         },
         {
           "title": "Quality Excellence",
@@ -63,7 +62,1704 @@
       ]
     }
   },
-  "categoryViewMore": "View More",
+  "landingpage": {
+    "Fasteners": {
+      "metadata": {
+        "title": "Fasteners | Professionalfessional Fastening Solutions",
+        "description": "Comprehensive fastening solutions for industrial assembly, construction, and manufacturing. High-quality screws, bolts, nuts, and more.",
+        "coverImage": "/images/product/navbar/big-fastener.jpg"
+      },
+      "hero": {
+        "title": "Professional Fastening Solutions",
+        "subtitle": "Comprehensive fastening solutions for industrial assembly, construction, and manufacturing. High-quality screws, bolts, nuts, and more."
+      },
+      "whatIs": {
+        "title": "What is a Fastener?",
+        "desc1": "Fasteners are mechanical components used to join or secure two or more objects together. They create non-permanent or permanent connections, allowing for easy assembly, disassembly, or maintenance when needed.",
+        "desc2": "Common types include screws, bolts, nuts, washers, rivets, and clips, each designed for specific load, material, and environmental conditions. Fasteners work by creating clamping force, friction, or mechanical interlock to prevent separation of connected parts."
+      },
+      "quality": {
+        "title": "Why Choose High-Quality Fasteners?",
+        "table": {
+          "header": {
+            "quality": "Fastener Quality",
+            "loadCapacity": "Load Capacity",
+            "corrosionResistance": "Corrosion Resistance",
+            "durability": "Durability",
+            "applications": "Applications"
+          },
+          "highQuality": {
+            "name": "High-Quality",
+            "load": "Meets/exceeds industry standards (e.g., ISO 898)",
+            "corrosion": "Premium coatings (zinc, nickel) or materials (stainless steel)",
+            "durability": "Resists fatigue, vibration loosening",
+            "applications": "Industrial machinery, aerospace, medical equipment"
+          },
+          "lowGrade": {
+            "name": "Low-Grade",
+            "load": "Inconsistent, often below safety thresholds",
+            "corrosion": "Minimal/no protection, prone to rust",
+            "durability": "Fails prematurely under cyclic loads",
+            "applications": "Temporary fixtures, non-critical DIY projects"
+          },
+          "generic": {
+            "name": "Generic",
+            "load": "Moderate but unreliable load handling",
+            "corrosion": "Basic plating, limited lifespan",
+            "durability": "Adequate for light, static loads",
+            "applications": "Furniture assembly, non-structural parts"
+          }
+        },
+        "specifications": {
+          "title": "Common Specifications",
+          "items": [
+            "Thread Size (Metric: M1.6-M30; Imperial: #0-1/2\")",
+            "Tensile Strength (4.8-12.9 grade for bolts)",
+            "Drive Type (Phillips, hex, torx, square)",
+            "Head Style (Countersunk, pan, hexagon)",
+            "Length (5mm-300mm)"
+          ]
+        },
+        "performance": {
+          "title": "Performance Characteristics",
+          "items": [
+            "Torque Requirements (varies by size/grade)",
+            "Shear Strength (resistance to lateral forces)",
+            "Fatigue Life (cycles before failure under repeated load)",
+            "Temperature Resistance (as per material)"
+          ]
+        }
+      },
+      "productSeries": {
+        "title": "Our Fastener Product Series",
+        "subtitle": "Our product range covers diverse fastener types for every application",
+        "applicationsLabel": "Applications:"
+      },
+      "howItWorks": {
+        "title": "How Do Fasteners Work?",
+        "step1": {
+          "title": "Clamping Force",
+          "desc": "Bolts and screws generate tension when tightened, pulling joined parts together. The friction between surfaces prevents slippage, while the fastener's tensile strength resists separation forces."
+        },
+        "step2": {
+          "title": "Mechanical Interlock",
+          "desc": "Rivets deform to create a permanent bulge, locking parts in place. Threaded fasteners (nuts/bolts) use helical threads to convert rotational force into linear clamping pressure."
+        },
+        "step3": {
+          "title": "Friction Enhancement",
+          "desc": "Washers increase surface area, distributing load and reducing loosening from vibration. Lock nuts feature nylon inserts or deformed threads to create extra friction."
+        }
+      },
+      "specificationsSection": {
+        "title": "Specifications & Materials"
+      },
+      "faqs": {
+        "questions": [
+          "Difference between bolt and screw",
+          "Choosing fastener material",
+          "Reusability",
+          "Torque calculation",
+          "Corrosion prevention",
+          "Load capacity"
+        ],
+        "answers": [
+          "Bolts are designed to be used with nuts; screws thread directly into a tapped hole or material (wood, plastic, metal).",
+          "For outdoor use, select 304/316 stainless steel; for high strength, choose 8.8+ grade alloy steel.",
+          "Threaded fasteners can be reused if threads are undamaged; rivets and blind fasteners are single-use.",
+          "Torque = K × D × F (K=coefficient, D=thread diameter, F=clamping force) – refer to industry charts for K values.",
+          "Apply anti-corrosion coatings (zinc plating), use dielectric grease, or select corrosion-resistant materials.",
+          "Depends on thread size (larger diameter = higher load), material grade, and installation torque."
+        ]
+      },
+      "industries": {
+        "automotive": "Automotive",
+        "automotiveItems": [
+          "Engine mounting bolts",
+          "Interior trim screws",
+          "Chassis rivets"
+        ],
+        "construction": "Construction",
+        "constructionItems": [
+          "Structural bolts for steel frames",
+          "Concrete anchors",
+          "Roofing screws"
+        ],
+        "electronics": "Electronics",
+        "electronicsItems": [
+          "Micro screws for circuit boards",
+          "Connector clips",
+          "Battery compartment fasteners"
+        ],
+        "aerospace": "Aerospace",
+        "aerospaceItems": [
+          "Titanium bolts for airframes",
+          "High-strength rivets for wings",
+          "Lock nuts for avionics"
+        ],
+        "medicalDevices": "Medical Devices",
+        "medicalDevicesItems": [
+          "Stainless steel screws for equipment",
+          "Sterile fasteners for surgical tools"
+        ]
+      }
+    },
+    "Cap-Plug": {
+      "metadata": {
+        "title": "Cap Plugs | Professional Protection Solutions",
+        "description": "Comprehensive protection solutions for industrial components, machinery, and equipment. High-quality cap plugs for sealing, covering, and safeguarding various parts.",
+        "coverImage": "/images/product/navbar/big-cap-plug.jpg"
+      },
+      "hero": {
+        "title": "Professional Protection Solutions",
+        "subtitle": "Comprehensive protection solutions for industrial components, machinery, and equipment. High-quality cap plugs for sealing, covering, and safeguarding various parts."
+      },
+      "whatIs": {
+        "title": "What is a Cap Plug?",
+        "desc1": "Cap plugs are protective components used to cover, seal, or block openings in pipes, tubes, fittings, and other mechanical parts. They provide temporary or permanent protection against contaminants, damage, and environmental factors.",
+        "desc2": "Common types include threaded caps, push-fit plugs, tapered plugs, and custom-shaped caps, each designed for specific opening sizes, materials, and application environments. Cap plugs work by creating a tight seal to prevent entry of dust, moisture, debris, or liquids, while also shielding surfaces from scratches or impact."
+      },
+      "quality": {
+        "title": "Why Choose High-Quality Cap Plugs?",
+        "table": {
+          "header": {
+            "quality": "Cap Plug Quality",
+            "sealIntegrity": "Seal Integrity",
+            "materialDurability": "Material Durability",
+            "temperatureResistance": "Temperature Resistance",
+            "applications": "Applications"
+          },
+          "highQuality": {
+            "name": "High-Quality",
+            "seal": "Consistent, leak-proof seal (meets industry standards like ISO 9001)",
+            "material": "Premium materials (FDA-grade silicone, high-density polyethylene)",
+            "temperature": "Withstands extreme ranges (-50°C to 200°C depending on material)",
+            "applications": "Medical equipment, food processing, aerospace components"
+          },
+          "lowGrade": {
+            "name": "Low-Grade",
+            "seal": "Inconsistent sealing, prone to leakage",
+            "material": "Cheap plastics prone to cracking and degradation",
+            "temperature": "Limited range (-10°C to 50°C)",
+            "applications": "Temporary storage of non-critical parts"
+          },
+          "generic": {
+            "name": "Generic",
+            "seal": "Basic seal for dry, clean environments",
+            "material": "Standard plastics with moderate durability",
+            "temperature": "Suitable for room temperature applications",
+            "applications": "General storage, non-exposed components"
+          }
+        },
+        "specifications": {
+          "title": "Common Specifications",
+          "items": [
+            "Size Range (Metric: M5-M100; Imperial: 1/4\"-4\")",
+            "Material Options (Silicone, rubber, polyethylene, polypropylene)",
+            "Style (Threaded, push-fit, tapered, flanged)",
+            "Color (Customizable for identification purposes)",
+            "Diameter Tolerance (±0.05mm for precision fits)"
+          ]
+        },
+        "performance": {
+          "title": "Performance Characteristics",
+          "items": [
+            "Chemical Resistance (varies by material composition)",
+            "Pressure Resistance (up to 10bar for industrial grades)",
+            "UV Stability (resistance to sunlight degradation)",
+            "Reusability (number of insertions before seal degradation)"
+          ]
+        }
+      },
+      "productSeries": {
+        "title": "Our Cap Plug Product Series",
+        "subtitle": "Our product range covers diverse cap plug types for every protection need",
+        "applicationsLabel": "Applications:"
+      },
+      "howItWorks": {
+        "title": "How Do Cap Plugs Work?",
+        "step1": {
+          "title": "Sealing Mechanism",
+          "desc": "Threaded cap plugs create a tight seal by engaging with matching threads on the component, while push-fit plugs use interference fit to wedge securely into openings, preventing fluid or debris entry."
+        },
+        "step2": {
+          "title": "Protection Barrier",
+          "desc": "The material composition of cap plugs acts as a barrier against environmental factors—rubber and silicone variants resist moisture and chemicals, while rigid plastics provide impact and scratch protection."
+        },
+        "step3": {
+          "title": "Custom Fit Design",
+          "desc": "Tapered and custom-shaped cap plugs conform to irregular openings, ensuring full coverage. Flanged designs add stability and prevent over-insertion, maintaining consistent protection."
+        }
+      },
+      "specificationsSection": {
+        "title": "Specifications & Materials"
+      },
+      "faqs": {
+        "questions": [
+          "Difference between cap and plug",
+          "Choosing cap plug material",
+          "Reusability factors",
+          "Proper sizing guidelines",
+          "Chemical resistance ratings",
+          "Temperature limits"
+        ],
+        "answers": [
+          "Caps typically cover external threads or ends, while plugs fill internal openings or holes; both provide protection but fit differently based on the component's geometry.",
+          "For chemical exposure, choose fluoropolymer-based plugs; for high temperatures, silicone or Viton materials are ideal; for general use, polyethylene offers cost-effectiveness.",
+          "Reusability depends on material—rubber and silicone plugs can be reused 50+ times; rigid plastic plugs may degrade after 10-15 insertions.",
+          "Measure the opening's inner diameter (for plugs) or outer diameter (for caps) and select a size with 1-3% interference for secure fit without distortion.",
+          "Ratings range from Class 1 (limited resistance) to Class 5 (chemical inertness); refer to material data sheets for specific chemical compatibility.",
+          "Lowest: Polyethylene (-40°C), Highest: Viton (260°C) – always verify with application temperature range before selection."
+        ]
+      },
+      "industries": {
+        "automotive": "Automotive",
+        "automotiveItems": [
+          "Engine component caps",
+          "Hydraulic line plugs",
+          "Threaded fitting protectors"
+        ],
+        "medical": "Medical",
+        "medicalItems": [
+          "Sterilization port caps",
+          "Instrument lumen plugs",
+          "Device connector covers"
+        ],
+        "plumbing": "Plumbing",
+        "plumbingItems": [
+          "Pipe end caps",
+          "Valve opening plugs",
+          "Fitting protectors during installation"
+        ],
+        "electronics": "Electronics",
+        "electronicsItems": [
+          "Connector port caps",
+          "Circuit board hole plugs",
+          "Cable end protectors"
+        ],
+        "manufacturing": "Manufacturing",
+        "manufacturingItems": [
+          "Machining fixture plugs",
+          "Welding port caps",
+          "Paint masking plugs"
+        ]
+      }
+    },
+    "Caster-Foot-Pad": {
+      "metadata": {
+        "title": "Caster Foot Pads | Professional Stability & Protection Solutions",
+        "description": "Comprehensive stability and protection solutions for furniture, machinery, and equipment. High-quality caster foot pads for shock absorption, floor protection, and anti-slip performance.",
+        "coverImage": "/images/product/navbar/big-caster-foot-pad.jpg"
+      },
+      "hero": {
+        "title": "Professional Stability & Protection Solutions",
+        "subtitle": "Comprehensive stability and protection solutions for furniture, machinery, and equipment. High-quality caster foot pads for shock absorption, floor protection, and anti-slip performance."
+      },
+      "whatIs": {
+        "title": "What is a Caster Foot Pad?",
+        "desc1": "Caster foot pads are protective and stabilizing components installed at the base of furniture, appliances, or industrial equipment. They combine the functionality of casters (for mobility) and foot pads (for stability), allowing for easy movement when needed and secure positioning when stationary.",
+        "desc2": "Common types include swivel caster pads, fixed caster pads, anti-vibration pads, and heavy-duty industrial pads, each designed for specific weight capacities, floor types, and usage environments. Caster foot pads work by providing a balanced base, reducing friction during movement, and preventing floor damage or slippage during use."
+      },
+      "quality": {
+        "title": "Why Choose High-Quality Caster Foot Pads?",
+        "table": {
+          "header": {
+            "quality": "Caster Foot Pad Quality",
+            "weightCapacity": "Weight Capacity",
+            "floorProtection": "Floor Protection",
+            "durability": "Durability",
+            "applications": "Applications"
+          },
+          "highQuality": {
+            "name": "High-Quality",
+            "weight": "Meets/exceeds industry standards (e.g., ISO 10567)",
+            "floor": "Non-marking materials (urethane, rubber) with scratch resistance",
+            "durability": "Resists wear, chemical corrosion, and temperature extremes",
+            "applications": "Industrial machinery, medical equipment, heavy furniture"
+          },
+          "lowGrade": {
+            "name": "Low-Grade",
+            "weight": "Inconsistent, often fails under moderate loads",
+            "floor": "Abrasive materials prone to scuffing floors",
+            "durability": "Cracks or deforms quickly with regular use",
+            "applications": "Lightweight decorative items, temporary setups"
+          },
+          "generic": {
+            "name": "Generic",
+            "weight": "Moderate capacity for static loads",
+            "floor": "Basic protection for hard floors, limited lifespan",
+            "durability": "Adequate for occasional use with light equipment",
+            "applications": "Home furniture, small appliances, office chairs"
+          }
+        },
+        "specifications": {
+          "title": "Common Specifications",
+          "items": [
+            "Size Range (Diameter: 30mm-200mm; Height: 10mm-80mm)",
+            "Weight Capacity (50kg-5000kg depending on model)",
+            "Material Options (Urethane, rubber, nylon, stainless steel base)",
+            "Type (Swivel, fixed, brake-equipped, anti-vibration)",
+            "Mounting Style (Screw-on, adhesive, bolt-on)"
+          ]
+        },
+        "performance": {
+          "title": "Performance Characteristics",
+          "items": [
+            "Friction Coefficient (anti-slip rating on various floor surfaces)",
+            "Shock Absorption (vibration reduction percentage)",
+            "Temperature Resistance (-30°C to 120°C for industrial grades)",
+            "Chemical Resistance (compatibility with oils, solvents, cleaning agents)"
+          ]
+        }
+      },
+      "productSeries": {
+        "title": "Our Caster Foot Pad Product Series",
+        "subtitle": "Our product range covers diverse caster foot pad types for every stability need",
+        "applicationsLabel": "Applications:"
+      },
+      "howItWorks": {
+        "title": "How Do Caster Foot Pads Work?",
+        "step1": {
+          "title": "Mobility & Locking Mechanism",
+          "desc": "Swivel caster pads use ball bearings to allow 360° movement, while integrated brakes (lever or foot-operated) lock the wheel or pad in place, converting mobility to stable positioning."
+        },
+        "step2": {
+          "title": "Load Distribution",
+          "desc": "The pad's surface area distributes the equipment's weight evenly across the floor, reducing pressure points and preventing indentation or damage to soft surfaces like wood or carpet."
+        },
+        "step3": {
+          "title": "Protection & Traction",
+          "desc": "Non-marking materials prevent scratches, while textured surfaces or rubber compounds enhance traction, resisting slippage even on smooth floors. Anti-vibration models absorb shocks to reduce noise and component wear."
+        }
+      },
+      "specificationsSection": {
+        "title": "Specifications & Materials"
+      },
+      "faqs": {
+        "questions": [
+          "Difference between caster and foot pad",
+          "Choosing the right size",
+          "Installation methods",
+          "Floor type compatibility",
+          "Weight capacity calculation",
+          "Maintenance requirements"
+        ],
+        "answers": [
+          "Casters focus on mobility with wheels, while foot pads prioritize stability; caster foot pads combine both, allowing movement and secure positioning in one component.",
+          "Select a diameter that distributes weight to <50psi on the floor surface; height should match equipment clearance needs for level positioning.",
+          "Screw-on for permanent installation, adhesive for temporary use on smooth surfaces, bolt-on for heavy-duty industrial applications.",
+          "Rubber pads work best on hardwood/concrete; urethane is ideal for tile/linoleum; stainless steel bases suit outdoor/rough surfaces.",
+          "Calculate as total equipment weight divided by number of pads, plus 30% safety margin for dynamic loads (e.g., movement, vibration).",
+          "Clean regularly to remove debris; inspect for wear on brake mechanisms and replace pads when surface texture is worn down."
+        ]
+      },
+      "industries": {
+        "industrial": "Industrial",
+        "industrialItems": [
+          "Machine tool base pads",
+          "Conveyor system casters",
+          "Heavy equipment stabilizers"
+        ],
+        "medical": "Medical",
+        "medicalItems": [
+          "Hospital bed casters with brakes",
+          "Equipment cart pads",
+          "MRI machine anti-vibration pads"
+        ],
+        "furniture": "Furniture",
+        "furnitureItems": [
+          "Sofa base pads",
+          "Office desk casters",
+          "Cabinet foot pads"
+        ],
+        "retail": "Retail",
+        "retailItems": [
+          "Display shelf casters",
+          "Stock cart pads",
+          "Checkout counter stabilizers"
+        ],
+        "foodService": "Food Service",
+        "foodServiceItems": [
+          "Stainless steel caster pads for ovens",
+          "Freezer dolly pads",
+          "Worktable anti-slip feet"
+        ]
+      }
+    },
+    "Clip-Buckle": {
+      "metadata": {
+        "title": "Clip Buckles | Professional Fastening & Securing Solutions",
+        "description": "Comprehensive fastening and securing solutions for straps, belts, and harnesses. High-quality clip buckles for quick release, adjustable tension, and reliable locking.",
+        "coverImage": "/images/product/navbar/big-clip-buckle.jpg"
+      },
+      "hero": {
+        "title": "Professional Fastening & Securing Solutions",
+        "subtitle": "Comprehensive fastening and securing solutions for straps, belts, and harnesses. High-quality clip buckles for quick release, adjustable tension, and reliable locking."
+      },
+      "whatIs": {
+        "title": "What is a Clip Buckle?",
+        "desc1": "Clip buckles are mechanical fastening devices used to connect, adjust, and release straps, belts, or webbing in various applications. They provide a secure yet easily operable connection, allowing for quick attachment and detachment when needed.",
+        "desc2": "Common types include side-release buckles, cam buckles, tongue buckles, and magnetic clip buckles, each designed for specific load requirements, ease of use, and environmental conditions. Clip buckles work by interlocking components that engage under tension and disengage with a deliberate action (e.g., squeezing, flipping a lever)."
+      },
+      "quality": {
+        "title": "Why Choose High-Quality Clip Buckles?",
+        "table": {
+          "header": {
+            "quality": "Clip Buckle Quality",
+            "loadStrength": "Load Strength",
+            "durability": "Durability",
+            "operationalReliability": "Operational Reliability",
+            "applications": "Applications"
+          },
+          "highQuality": {
+            "name": "High-Quality",
+            "load": "Meets/exceeds industry standards (e.g., ASTM D4353)",
+            "durability": "Premium materials (nylon, acetal, stainless steel) with UV resistance",
+            "reliability": "Consistent engagement/disengagement, no accidental release",
+            "applications": "Safety harnesses, medical equipment, industrial strapping"
+          },
+          "lowGrade": {
+            "name": "Low-Grade",
+            "load": "Inconsistent, fails under moderate tension",
+            "durability": "Cheap plastics prone to brittleness and breakage",
+            "reliability": "Prone to accidental release, jamming issues",
+            "applications": "Lightweight packaging, disposable straps"
+          },
+          "generic": {
+            "name": "Generic",
+            "load": "Moderate strength for non-critical uses",
+            "durability": "Basic plastics with limited lifespan",
+            "reliability": "Adequate for occasional use with light loads",
+            "applications": "Luggage straps, backpacks, general purpose belts"
+          }
+        },
+        "specifications": {
+          "title": "Common Specifications",
+          "items": [
+            "Size Range (Strap Width: 10mm-50mm)",
+            "Breaking Strength (50N-5000N depending on model)",
+            "Material Options (Nylon, acetal, polypropylene, stainless steel)",
+            "Type (Side-release, cam, tongue, magnetic, quick-release)",
+            "Mounting Style (Stitch-on, bolt-on, rivet-on)"
+          ]
+        },
+        "performance": {
+          "title": "Performance Characteristics",
+          "items": [
+            "Cycle Life (Number of engage/disengage cycles before wear)",
+            "Temperature Resistance (-30°C to 80°C for standard models)",
+            "Chemical Resistance (Resistance to oils, solvents, and water)",
+            "UV Stability (Resistance to degradation from sunlight exposure)"
+          ]
+        }
+      },
+      "productSeries": {
+        "title": "Our Clip Buckle Product Series",
+        "subtitle": "Our product range covers diverse clip buckle types for every fastening need",
+        "applicationsLabel": "Applications:"
+      },
+      "howItWorks": {
+        "title": "How Do Clip Buckles Work?",
+        "step1": {
+          "title": "Interlocking Mechanism",
+          "desc": "Side-release buckles use spring-loaded prongs that engage with slots in the mating part, creating a secure lock. Cam buckles use a rotating cam to clamp webbing between the cam and frame, adjusting tension as the cam is tightened."
+        },
+        "step2": {
+          "title": "Tension Distribution",
+          "desc": "The design distributes strap tension evenly across the buckle's frame, preventing stress concentration at connection points. Reinforced hinges and load-bearing surfaces enhance strength under continuous tension."
+        },
+        "step3": {
+          "title": "Release Mechanism",
+          "desc": "Deliberate actions (squeezing tabs, flipping levers, or pulling triggers) disengage the interlocking components, allowing quick release without damaging the buckle or strap. Some models feature one-handed operation for convenience."
+        }
+      },
+      "specificationsSection": {
+        "title": "Specifications & Materials"
+      },
+      "faqs": {
+        "questions": [
+          "Difference between clip and buckle",
+          "Choosing the right size",
+          "Material selection guide",
+          "Load capacity factors",
+          "Maintenance tips",
+          "Environmental resistance"
+        ],
+        "answers": [
+          "Clips are typically smaller, single-point fasteners; buckles are larger, multi-component devices that adjust tension and secure straps. Clip buckles combine both functions for versatile fastening.",
+          "Match the buckle size to the strap width (e.g., 25mm buckle for 25mm strap) and ensure breaking strength exceeds application requirements by 50% for safety.",
+          "Nylon for general use; acetal for higher strength; stainless steel for outdoor/industrial use; magnetic for quick, repeated connections.",
+          "Depends on material strength, frame design, and strap compatibility. Higher breaking strength is required for safety-critical applications like harnesses.",
+          "Clean with mild detergent to remove debris; lubricate moving parts (if metal) to prevent corrosion; inspect for cracks in plastic components regularly.",
+          "Stainless steel and acetal resist water and chemicals; UV-stabilized nylon is ideal for outdoor use; avoid low-grade plastics in extreme temperatures."
+        ]
+      },
+      "industries": {
+        "outdoor": "Outdoor",
+        "outdoorItems": [
+          "Backpack buckles",
+          "Camping gear straps",
+          "Hiking harness clips"
+        ],
+        "automotive": "Automotive",
+        "automotiveItems": [
+          "Seatbelt buckles",
+          "Cargo strap clips",
+          "Child seat fasteners"
+        ],
+        "medical": "Medical",
+        "medicalItems": [
+          "Patient restraint buckles",
+          "Medical bag straps",
+          "Wheelchair harness clips"
+        ],
+        "industrial": "Industrial",
+        "industrialItems": [
+          "Cargo securing cam buckles",
+          "Safety harness clips",
+          "Conveyor belt fasteners"
+        ],
+        "fashion": "Fashion",
+        "fashionItems": [
+          "Bag buckles",
+          "Belt clips",
+          "Accessory fasteners"
+        ]
+      }
+    },
+    "Damper-Buffer": {
+      "metadata": {
+        "title": "Damper Buffers | Professional Shock Absorption Solutions",
+        "description": "Comprehensive shock absorption and vibration control solutions for machinery, furniture, and industrial equipment. High-quality damper buffers for noise reduction, impact mitigation, and motion control.",
+        "coverImage": "/images/product/navbar/big-damper-buffer.jpg"
+      },
+      "hero": {
+        "title": "Professional Shock Absorption Solutions",
+        "subtitle": "Comprehensive shock absorption and vibration control solutions for machinery, furniture, and industrial equipment. High-quality damper buffers for noise reduction, impact mitigation, and motion control."
+      },
+      "whatIs": {
+        "title": "What is a Damper Buffer?",
+        "desc1": "Damper buffers are mechanical or hydraulic components designed to absorb and dissipate kinetic energy, reducing impact forces, vibrations, and noise in moving systems. They provide controlled deceleration or cushioning to protect equipment and enhance safety.",
+        "desc2": "Common types include hydraulic dampers, pneumatic buffers, rubber buffers, and spring dampers, each engineered for specific impact speeds, load magnitudes, and environmental conditions. Damper buffers work by converting kinetic energy into heat (via fluid friction) or storing/releasing energy gradually (via elastic deformation)."
+      },
+      "quality": {
+        "title": "Why Choose High-Quality Damper Buffers?",
+        "table": {
+          "header": {
+            "quality": "Damper Buffer Quality",
+            "energyAbsorption": "Energy Absorption",
+            "serviceLife": "Service Life",
+            "temperatureStability": "Temperature Stability",
+            "applications": "Applications"
+          },
+          "highQuality": {
+            "name": "High-Quality",
+            "energy": "Meets/exceeds industry standards (e.g., ISO 15242)",
+            "service": "Precision seals and fluids for 1M+ cycles",
+            "temperature": "Stable performance from -40°C to 120°C",
+            "applications": "Industrial machinery, automotive suspension, aerospace"
+          },
+          "lowGrade": {
+            "name": "Low-Grade",
+            "energy": "Inconsistent absorption, sudden rebound",
+            "service": "Premature seal failure (10K-50K cycles)",
+            "temperature": "Performance drops >30% outside 10-40°C range",
+            "applications": "Lightweight toys, temporary fixtures"
+          },
+          "generic": {
+            "name": "Generic",
+            "energy": "Basic absorption for low-impact scenarios",
+            "service": "Moderate life (100K-300K cycles)",
+            "temperature": "Adequate stability in 0-50°C environments",
+            "applications": "Furniture hinges, small appliances, cabinet doors"
+          }
+        },
+        "specifications": {
+          "title": "Common Specifications",
+          "items": [
+            "Stroke Length (5mm-200mm)",
+            "Maximum Impact Force (50N-50,000N)",
+            "Material Options (High-grade steel, nitrile rubber, hydraulic fluid, aluminum alloy)",
+            "Type (Hydraulic, pneumatic, rubber, spring, viscous)",
+            "Mounting Style (Threaded, flange, clip-on, adhesive)"
+          ]
+        },
+        "performance": {
+          "title": "Performance Characteristics",
+          "items": [
+            "Damping Coefficient (Controlled deceleration rate)",
+            "Rebound Reduction (Percentage of energy retained after impact)",
+            "Operating Pressure (For pneumatic/hydraulic models)",
+            "Vibration Isolation Efficiency (Reduction in transmitted vibration)"
+          ]
+        }
+      },
+      "productSeries": {
+        "title": "Our Damper Buffer Product Series",
+        "subtitle": "Our product range covers diverse damper buffer types for every shock absorption need",
+        "applicationsLabel": "Applications:"
+      },
+      "howItWorks": {
+        "title": "How Do Damper Buffers Work?",
+        "step1": {
+          "title": "Energy Conversion",
+          "desc": "Hydraulic dampers use fluid forced through small orifices, converting kinetic energy into heat via friction. Rubber buffers deform elastically, storing energy temporarily and releasing it gradually to minimize impact."
+        },
+        "step2": {
+          "title": "Controlled Deceleration",
+          "desc": "The damping medium (fluid, gas, or elastomer) creates resistance proportional to the impact speed, ensuring smooth deceleration rather than sudden stopping, which reduces stress on connected components."
+        },
+        "step3": {
+          "title": "Vibration Isolation",
+          "desc": "By absorbing repetitive vibrations, damper buffers prevent resonance in machinery, reducing noise, wear, and structural fatigue. They decouple vibrating components from the rest of the system to limit energy transfer."
+        }
+      },
+      "specificationsSection": {
+        "title": "Specifications & Materials"
+      },
+      "faqs": {
+        "questions": [
+          "Difference between damper and buffer",
+          "Selecting the right stroke length",
+          "Maintenance requirements",
+          "Temperature range considerations",
+          "Load capacity calculation",
+          "Mounting orientation limitations"
+        ],
+        "answers": [
+          "Dampers focus on gradual energy dissipation for motion control; buffers prioritize impact absorption for sudden loads. Many products combine both functions as damper buffers.",
+          "Stroke length should match the maximum displacement of the moving part, with 10-20% extra capacity to handle unexpected overtravel.",
+          "Hydraulic models require periodic fluid checks; rubber buffers need inspection for cracks/hardening; clean mounting surfaces to prevent debris damage.",
+          "Choose low-temperature formulas for cold environments (-40°C); high-temperature seals for industrial applications above 80°C.",
+          "Calculate based on impact mass and velocity (Energy = 0.5 × mass × velocity²) – select a buffer with 20% higher energy rating than calculated.",
+          "Hydraulic dampers typically require vertical mounting; pneumatic models can operate in any orientation; check manufacturer specs for orientation limits."
+        ]
+      },
+      "industries": {
+        "automotive": "Automotive",
+        "automotiveItems": [
+          "Door closing dampers",
+          "Suspension buffers",
+          "Trunk lid dampers"
+        ],
+        "industrial": "Industrial",
+        "industrialItems": [
+          "Robot arm end buffers",
+          "Conveyor stop dampers",
+          "Press machine shock absorbers"
+        ],
+        "furniture": "Furniture",
+        "furnitureItems": [
+          "Drawer soft-close dampers",
+          "Cabinet door buffers",
+          "Sofa recliner dampers"
+        ],
+        "construction": "Construction",
+        "constructionItems": [
+          "Crane boom buffers",
+          "Elevator landing dampers",
+          "Door closer buffers"
+        ],
+        "electronics": "Electronics",
+        "electronicsItems": [
+          "Hard drive vibration dampers",
+          "Server rack buffers",
+          "Display panel shock absorbers"
+        ]
+      }
+    },
+    "Door-Latch": {
+      "metadata": {
+        "title": "Door Latches | Professional Door Securing Solutions",
+        "description": "Comprehensive door securing solutions for residential, commercial, and industrial applications. High-quality door latches for safety, privacy, and convenient access control.",
+        "coverImage": "/images/product/navbar/big-door-latch.jpg"
+      },
+      "hero": {
+        "title": "Professional Door Securing Solutions",
+        "subtitle": "Comprehensive door securing solutions for residential, commercial, and industrial applications. High-quality door latches for safety, privacy, and convenient access control."
+      },
+      "whatIs": {
+        "title": "What is a Door Latch?",
+        "desc1": "Door latches are mechanical or electronic devices used to keep doors closed and secured, while allowing controlled opening and closing. They create a temporary or semi-permanent connection between a door and its frame, preventing unintended movement.",
+        "desc2": "Common types include spring latches, deadlatches, mortise latches, and electronic latches, each designed for specific security levels, door materials, and usage scenarios. Door latches work by engaging a bolt or tongue with a strike plate mounted on the door frame, creating a secure hold until released by a handle, key, or electronic signal."
+      },
+      "quality": {
+        "title": "Why Choose High-Quality Door Latches?",
+        "table": {
+          "header": {
+            "quality": "Door Latch Quality",
+            "securityLevel": "Security Level",
+            "durability": "Durability",
+            "operationSmoothness": "Operation Smoothness",
+            "applications": "Applications"
+          },
+          "highQuality": {
+            "name": "High-Quality",
+            "security": "Meets/exceeds industry standards (e.g., ANSI/BHMA A156.115)",
+            "durability": "Premium materials (brass, stainless steel) with corrosion resistance",
+            "operation": "Consistent smooth operation, minimal wear over time",
+            "applications": "Commercial buildings, high-security areas, exterior doors"
+          },
+          "lowGrade": {
+            "name": "Low-Grade",
+            "security": "Basic locking mechanism, easily bypassed",
+            "durability": "Cheap metals/plastics prone to jamming and breakage",
+            "operation": "Inconsistent performance, frequent sticking",
+            "applications": "Temporary structures, non-security internal doors"
+          },
+          "generic": {
+            "name": "Generic",
+            "security": "Moderate security for standard use",
+            "durability": "Basic metals with limited lifespan",
+            "operation": "Adequate performance for light to moderate use",
+            "applications": "Residential internal doors, closet doors, utility rooms"
+          }
+        },
+        "specifications": {
+          "title": "Common Specifications",
+          "items": [
+            "Backset (60mm-100mm, distance from edge of door to center of latch)",
+            "Bolt Size (16mm-32mm throw length)",
+            "Material Options (Brass, stainless steel, zinc alloy, aluminum)",
+            "Type (Spring latch, deadlatch, mortise latch, electronic latch)",
+            "Finish (Polished chrome, satin nickel, oil-rubbed bronze, matte black)"
+          ]
+        },
+        "performance": {
+          "title": "Performance Characteristics",
+          "items": [
+            "Cycle Life (10,000-500,000 operations depending on grade)",
+            "Security Rating (Grade 1-3 based on ANSI standards)",
+            "Fire Resistance (30-90 minute ratings for fire doors)",
+            "Weather Resistance (For exterior applications, resistance to moisture and temperature extremes)"
+          ]
+        }
+      },
+      "productSeries": {
+        "title": "Our Door Latch Product Series",
+        "subtitle": "Our product range covers diverse door latch types for every securing need",
+        "applicationsLabel": "Applications:"
+      },
+      "howItWorks": {
+        "title": "How Do Door Latches Work?",
+        "step1": {
+          "title": "Engagement Mechanism",
+          "desc": "Spring latches use a spring-loaded bolt that retracts when the door handle is turned and extends automatically into the strike plate when released. Deadlatches feature an additional bolt that can only be retracted with a key or thumbturn, enhancing security."
+        },
+        "step2": {
+          "title": "Secure Hold",
+          "desc": "When the door is closed, the latch bolt extends into the strike plate's recess, creating a secure connection that resists forced opening. The strike plate distributes force evenly across the door frame, preventing damage from pressure."
+        },
+        "step3": {
+          "title": "Release System",
+          "desc": "Mechanical latches release via handle rotation or key operation, retracting the bolt from the strike plate. Electronic latches use keypads, cards, or biometrics to trigger a motorized release, offering advanced access control features."
+        }
+      },
+      "specificationsSection": {
+        "title": "Specifications & Materials"
+      },
+      "faqs": {
+        "questions": [
+          "Difference between latch and lock",
+          "Choosing the right backset",
+          "Material selection guide",
+          "Security rating explained",
+          "Maintenance tips",
+          "Fire door compatibility"
+        ],
+        "answers": [
+          "Latches keep doors closed but may not offer high security; locks include additional mechanisms (deadbolts, keyed cylinders) to prevent unauthorized entry. Many products combine both as latch-lock systems.",
+          "Measure from the edge of the door to the center of the bore hole. Standard backsets are 60mm (2-3/8\") and 76mm (3\"), with 100mm for some commercial doors.",
+          "Brass for corrosion resistance; stainless steel for high durability; zinc alloy for cost-effective options; aluminum for lightweight applications.",
+          "ANSI Grade 1: Heavy-duty commercial (500,000 cycles); Grade 2: Light commercial/residential (200,000 cycles); Grade 3: Residential (100,000 cycles).",
+          "Lubricate moving parts annually with graphite powder; clean strike plates to remove debris; adjust alignment if latch sticks or doesn't engage fully.",
+          "Choose latches with fire ratings matching the door (30/60/90 minutes). They must maintain functionality during fire conditions and release easily for evacuation."
+        ]
+      },
+      "industries": {
+        "residential": "Residential",
+        "residentialItems": [
+          "Interior door spring latches",
+          "Entry door deadlatches",
+          "Closet door latches"
+        ],
+        "commercial": "Commercial",
+        "commercialItems": [
+          "Office door mortise latches",
+          "Restroom privacy latches",
+          "Storefront door latches"
+        ],
+        "industrial": "Industrial",
+        "industrialItems": [
+          "Warehouse door heavy-duty latches",
+          "Machine enclosure latches",
+          "Loading dock door latches"
+        ],
+        "healthcare": "Healthcare",
+        "healthcareItems": [
+          "Patient room privacy latches",
+          "Medical cabinet latches",
+          "Operating room door latches"
+        ],
+        "hospitality": "Hospitality",
+        "hospitalityItems": [
+          "Hotel room electronic latches",
+          "Lobby door latches",
+          "Guestroom closet latches"
+        ]
+      }
+    },
+    "Grip-Handle": {
+      "metadata": {
+        "title": "Grip Handles | Professional Handling Solutions",
+        "description": "Comprehensive handling solutions for doors, cabinets, tools, and equipment. High-quality grip handles for comfort, safety, and ergonomic operation.",
+        "coverImage": "/images/product/navbar/big-grip-handle.jpg"
+      },
+      "hero": {
+        "title": "Professional Handling Solutions",
+        "subtitle": "Comprehensive handling solutions for doors, cabinets, tools, and equipment. High-quality grip handles for comfort, safety, and ergonomic operation."
+      },
+      "whatIs": {
+        "title": "What is a Grip Handle?",
+        "desc1": "Grip handles are ergonomic components designed to provide a secure, comfortable hold for operating or moving objects. They facilitate controlled manipulation, reduce hand fatigue, and enhance safety by improving grip stability.",
+        "desc2": "Common types include lever handles, pull handles, recessed grips, and tool handles, each engineered for specific applications, load requirements, and user interaction patterns. Grip handles work by distributing force evenly across the hand, minimizing pressure points and maximizing control during use."
+      },
+      "quality": {
+        "title": "Why Choose High-Quality Grip Handles?",
+        "table": {
+          "header": {
+            "quality": "Grip Handle Quality",
+            "ergonomics": "Ergonomics",
+            "durability": "Durability",
+            "slipResistance": "Slip Resistance",
+            "applications": "Applications"
+          },
+          "highQuality": {
+            "name": "High-Quality",
+            "ergonomics": "Meets/exceeds industry standards (e.g., ISO 11228)",
+            "durability": "Premium materials (reinforced polymers, stainless steel) with long service life",
+            "slip": "Textured surfaces or rubberized grips for wet/dry conditions",
+            "applications": "Industrial machinery, medical equipment, commercial doors"
+          },
+          "lowGrade": {
+            "name": "Low-Grade",
+            "ergonomics": "Poorly designed, uneven pressure distribution",
+            "durability": "Weak materials (thin plastic, low-grade metal) prone to breaking",
+            "slip": "Smooth surfaces with high slippage risk",
+            "applications": "Disposable products, temporary fixtures, lightweight items"
+          },
+          "generic": {
+            "name": "Generic",
+            "ergonomics": "Basic comfort for occasional use",
+            "durability": "Adequate for light loads and moderate usage",
+            "slip": "Moderate grip in dry conditions",
+            "applications": "Residential cabinets, small appliances, light tools"
+          }
+        },
+        "specifications": {
+          "title": "Common Specifications",
+          "items": [
+            "Dimensions (Length: 50mm-300mm; Diameter: 15mm-50mm)",
+            "Material Options (Stainless steel, aluminum, rubber, thermoplastic, wood)",
+            "Mounting Type (Screw-on, bolted, adhesive, welded)",
+            "Load Capacity (5kg-500kg depending on design)",
+            "Finish (Textured, polished, rubberized, powder-coated)"
+          ]
+        },
+        "performance": {
+          "title": "Performance Characteristics",
+          "items": [
+            "Ergonomic Rating (Hand fatigue reduction percentage)",
+            "Temperature Resistance (-40°C to 150°C based on material)",
+            "Chemical Resistance (Resistance to oils, solvents, cleaners)",
+            "Impact Strength (Resistance to accidental drops or impacts)"
+          ]
+        }
+      },
+      "productSeries": {
+        "title": "Our Grip Handle Product Series",
+        "subtitle": "Our product range covers diverse grip handle types for every handling need",
+        "applicationsLabel": "Applications:"
+      },
+      "howItWorks": {
+        "title": "How Do Grip Handles Work?",
+        "step1": {
+          "title": "Force Distribution",
+          "desc": "Ergonomic designs spread contact pressure across the palm and fingers, reducing strain on individual muscles and joints. This minimizes fatigue during prolonged use and improves control."
+        },
+        "step2": {
+          "title": "Friction Enhancement",
+          "desc": "Textured surfaces, contoured shapes, and materials with high coefficient of friction create a secure grip, preventing slippage even with wet hands or gloves. This enhances safety in industrial environments."
+        },
+        "step3": {
+          "title": "Mechanical Transfer",
+          "desc": "Handles convert user-applied force into directed motion (pulling, pushing, turning), leveraging leverage points to reduce the effort required to move or operate objects. They act as force multipliers for efficient operation."
+        }
+      },
+      "specificationsSection": {
+        "title": "Specifications & Materials"
+      },
+      "faqs": {
+        "questions": [
+          "Difference between grip and handle",
+          "Choosing the right size",
+          "Material selection guide",
+          "Cleaning and maintenance",
+          "Load capacity calculation",
+          "Ergonomic considerations"
+        ],
+        "answers": [
+          "A grip refers specifically to the contact surface designed for hand hold; a handle is the entire component, including mounting hardware. Many products combine both as grip handles.",
+          "Select length based on hand size (average adult hand: 180-220mm) and use case – longer handles for two-handed operation, shorter for compact spaces.",
+          "Rubber for comfort and grip; stainless steel for durability and corrosion resistance; thermoplastics for cost-effectiveness; wood for aesthetic applications.",
+          "Clean rubber grips with mild soap and water; metal handles may require periodic lubrication for moving parts; avoid harsh chemicals on plastic components.",
+          "Consider both static load (weight when stationary) and dynamic load (weight during movement) – select handles rated 30% higher than maximum expected load.",
+          "Look for contoured designs that match natural hand position, adequate diameter (30-40mm for most adults), and balanced weight distribution to minimize strain."
+        ]
+      },
+      "industries": {
+        "industrial": "Industrial",
+        "industrialItems": [
+          "Machine control handles",
+          "Cabinet pull handles",
+          "Tool grip handles"
+        ],
+        "healthcare": "Healthcare",
+        "healthcareItems": [
+          "Medical equipment grips",
+          "Patient bed handles",
+          "Wheelchair grips"
+        ],
+        "automotive": "Automotive",
+        "automotiveItems": [
+          "Door interior handles",
+          "Glove box grips",
+          "Toolbox handles"
+        ],
+        "furniture": "Furniture",
+        "furnitureItems": [
+          "Drawer pull handles",
+          "Cabinet grips",
+          "Sofa adjustment handles"
+        ],
+        "sports": "Sports",
+        "sportsItems": [
+          "Exercise equipment grips",
+          "Luggage handles",
+          "Outdoor gear grips"
+        ]
+      }
+    },
+    "Knob-Button": {
+      "metadata": {
+        "title": "Knob-Buttons | Professional Control Solutions",
+        "description": "Comprehensive control solutions for machinery, appliances, instruments, and furniture. High-quality knobs and buttons for precise operation, ergonomic interaction, and functional control.",
+        "coverImage": "/images/product/navbar/big-knob-button.jpg"
+      },
+      "hero": {
+        "title": "Professional Control Solutions",
+        "subtitle": "Comprehensive control solutions for machinery, appliances, instruments, and furniture. High-quality knobs and buttons for precise operation, ergonomic interaction, and functional control."
+      },
+      "whatIs": {
+        "title": "What is a Knob-Button?",
+        "desc1": "Knob-buttons are interactive control components designed to facilitate manual operation of devices, equipment, or furniture. They enable functions like adjustment, activation, selection, or manipulation through rotational or pressing motions.",
+        "desc2": "Common types include rotary knobs, push buttons, toggle knobs, and control buttons, each engineered for specific operational needs, feedback requirements, and user interaction patterns. Knob-buttons work by translating manual force into mechanical or electrical signals that trigger desired functions in connected systems."
+      },
+      "quality": {
+        "title": "Why Choose High-Quality Knob-Buttons?",
+        "table": {
+          "header": {
+            "quality": "Knob-Button Quality",
+            "operationalPrecision": "Operational Precision",
+            "durability": "Durability",
+            "ergonomics": "Ergonomics",
+            "applications": "Applications"
+          },
+          "highQuality": {
+            "name": "High-Quality",
+            "precision": "Meets/exceeds industry standards (e.g., ISO 9241)",
+            "durability": "Premium materials (anodized aluminum, reinforced thermoplastics) with 100,000+ operation cycles",
+            "ergonomics": "Contoured designs with optimal grip and tactile feedback",
+            "applications": "Medical equipment, industrial machinery, aviation controls"
+          },
+          "lowGrade": {
+            "name": "Low-Grade",
+            "precision": "Inconsistent operation, poor alignment",
+            "durability": "Cheap plastics prone to cracking, premature wear",
+            "ergonomics": "Uncomfortable shapes, slippery surfaces",
+            "applications": "Disposable devices, low-cost toys, temporary fixtures"
+          },
+          "generic": {
+            "name": "Generic",
+            "precision": "Adequate for basic adjustment needs",
+            "durability": "Suitable for light use (10,000-50,000 cycles)",
+            "ergonomics": "Basic comfort for occasional operation",
+            "applications": "Household appliances, consumer electronics, simple tools"
+          }
+        },
+        "specifications": {
+          "title": "Common Specifications",
+          "items": [
+            "Dimensions (Diameter: 10mm-100mm; Height: 5mm-50mm)",
+            "Material Options (Plastic, metal, rubber, wood, composite materials)",
+            "Mounting Type (Threaded, snap-fit, adhesive, bolt-on)",
+            "Operation Force (1N-10N for buttons; torque range for knobs)",
+            "Interface Type (Mechanical, electrical, capacitive)"
+          ]
+        },
+        "performance": {
+          "title": "Performance Characteristics",
+          "items": [
+            "Actuation Travel (1mm-5mm for buttons)",
+            "Rotational Resistance (Controlled friction for knobs)",
+            "Environmental Resistance (Waterproof, dustproof ratings IP44-IP67)",
+            "Temperature Range (-40°C to 85°C based on material)"
+          ]
+        }
+      },
+      "productSeries": {
+        "title": "Our Knob-Button Product Series",
+        "subtitle": "Our product range covers diverse knob-button types for every control need",
+        "applicationsLabel": "Applications:"
+      },
+      "howItWorks": {
+        "title": "How Do Knob-Buttons Work?",
+        "step1": {
+          "title": "Mechanical Transmission",
+          "desc": "Rotary knobs convert rotational motion into linear or digital input via shafts or potentiometers, adjusting settings like volume, temperature, or speed through direct mechanical linkage."
+        },
+        "step2": {
+          "title": "Tactile Activation",
+          "desc": "Push buttons use springs or flexible materials to create a return force after pressing, completing or breaking electrical circuits (for electronic devices) or triggering mechanical latches (for physical systems)."
+        },
+        "step3": {
+          "title": "Feedback Mechanism",
+          "desc": "High-quality knob-buttons provide tactile or auditory feedback (clicks, resistance changes) to confirm operation, ensuring users can operate devices without visual confirmation."
+        }
+      },
+      "specificationsSection": {
+        "title": "Specifications & Materials"
+      },
+      "faqs": {
+        "questions": [
+          "Difference between knob and button",
+          "Choosing the right material",
+          "Tactile feedback adjustment",
+          "Installation considerations",
+          "Cleaning and maintenance",
+          "Environmental resistance selection"
+        ],
+        "answers": [
+          "Knobs primarily function through rotation for continuous adjustment; buttons operate via pressing for discrete on/off or selection functions. Some products combine both features.",
+          "Metal for durability and industrial use; plastic for cost-effectiveness and color variety; rubber for enhanced grip and weather resistance; wood for aesthetic applications.",
+          "Tactile feedback is adjusted through spring tension (buttons) or detent spacing (knobs) – higher tension provides firmer feel, while closer detents offer finer adjustment increments.",
+          "Ensure compatible mounting size (shaft diameter for knobs, hole size for buttons); consider clearance for operation; verify electrical ratings for electronic interfaces.",
+          "Clean plastic/metal components with mild detergent; avoid harsh chemicals on rubber grips; lubricate mechanical knobs periodically with silicone grease if needed.",
+          "Indoor dry environments: IP44; damp areas (kitchens/bathrooms): IP65; industrial/outdoor use: IP66/IP67 for dust and water protection."
+        ]
+      },
+      "industries": {
+        "industrial": "Industrial",
+        "industrialItems": [
+          "Machine control knobs",
+          "Panel mount buttons",
+          "Emergency stop buttons"
+        ],
+        "medical": "Medical",
+        "medicalItems": [
+          "Device adjustment knobs",
+          "Procedure start buttons",
+          "Equipment control panels"
+        ],
+        "consumerElectronics": "Consumer Electronics",
+        "consumerElectronicsItems": [
+          "Audio volume knobs",
+          "Remote control buttons",
+          "Appliance settings knobs"
+        ],
+        "automotive": "Automotive",
+        "automotiveItems": [
+          "Dashboard control knobs",
+          "Climate control buttons",
+          "Infotainment system knobs"
+        ],
+        "furniture": "Furniture",
+        "furnitureItems": [
+          "Drawer lock buttons",
+          "Height adjustment knobs",
+          "Recline control knobs"
+        ]
+      }
+    },
+    "Led-Accessories": {
+      "metadata": {
+        "title": "LED Accessories | Professional Lighting Support Solutions",
+        "description": "Comprehensive support solutions for LED lighting systems, including drivers, connectors, heat sinks, and more. Essential components for optimal LED performance and installation.",
+        "coverImage": "/images/product/navbar/big-led-accessories.jpg"
+      },
+      "hero": {
+        "title": "Professional LED LED Lighting Support Solutions",
+        "subtitle": "Comprehensive support solutions for LED lighting systems, including drivers, connectors, heat sinks, and more. Essential components for optimal LED performance and installation."
+      },
+      "whatIs": {
+        "title": "What are LED Accessories?",
+        "desc1": "LED accessories are supplementary components designed to enhance, support, or enable the functionality of LED lighting systems. They ensure proper operation, installation, thermal management, and connectivity of LED fixtures.",
+        "desc2": "Common types include LED drivers, connectors, heat sinks, dimmers, mounting brackets, and lenses, each engineered for specific LED configurations, power requirements, and environmental conditions. These accessories work by regulating power, dissipating heat, facilitating installation, or modifying light output characteristics."
+      },
+      "quality": {
+        "title": "Why Choose High-Quality LED Accessories?",
+        "table": {
+          "header": {
+            "quality": "LED Accessory Quality",
+            "performanceStability": "Performance Stability",
+            "durability": "Durability",
+            "compatibility": "Compatibility",
+            "applications": "Applications"
+          },
+          "highQuality": {
+            "name": "High-Quality",
+            "performance": "Meets/exceeds industry standards (e.g., EN 61347)",
+            "durability": "Premium materials with long-term reliability (100,000+ hours)",
+            "compatibility": "Broad range with various LED modules and fixtures",
+            "applications": "Commercial lighting, industrial facilities, smart lighting systems"
+          },
+          "lowGrade": {
+            "name": "Low-Grade",
+            "performance": "Inconsistent power regulation, frequent failures",
+            "durability": "Cheap materials prone to overheating and degradation",
+            "compatibility": "Limited to specific low-power LED setups",
+            "applications": "Disposable lighting, temporary decorative setups"
+          },
+          "generic": {
+            "name": "Generic",
+            "performance": "Adequate for basic LED operation",
+            "durability": "Suitable for low-duty-cycle residential use",
+            "compatibility": "Works with standard LED configurations",
+            "applications": "Home lighting, small-scale DIY projects"
+          }
+        },
+        "specifications": {
+          "title": "Common Specifications",
+          "items": [
+            "Power Rating (LED drivers: 5W-500W; varies by accessory type)",
+            "Input Voltage (12V, 24V, 110V, 220V AC/DC options)",
+            "Connector Types (DC jack, terminal block, RGB connectors, IP-rated plugs)",
+            "Heat Sink Dimensions (varies by cooling capacity needs)",
+            "Dimming Protocols (PWM, 0-10V, DALI, DMX512)"
+          ]
+        },
+        "performance": {
+          "title": "Performance Characteristics",
+          "items": [
+            "Efficiency (LED drivers: 85%-95% energy conversion)",
+            "Thermal Conductivity (heat sinks: 100-400 W/(m·K))",
+            "Protection Features (overvoltage, overcurrent, short-circuit protection)",
+            "Operating Temperature Range (-40°C to 85°C for industrial grade)"
+          ]
+        }
+      },
+      "productSeries": {
+        "title": "Our LED Accessories Product Series",
+        "subtitle": "Our product range covers diverse LED accessories for every lighting system need",
+        "applicationsLabel": "Applications:"
+      },
+      "howItWorks": {
+        "title": "How Do LED Accessories Work?",
+        "step1": {
+          "title": "Power Regulation",
+          "desc": "LED drivers convert alternating current (AC) to direct current (DC) and stabilize voltage/current, ensuring LEDs receive consistent power to prevent damage and maintain brightness."
+        },
+        "step2": {
+          "title": "Thermal Management",
+          "desc": "Heat sinks absorb excess heat from LEDs, dissipating it through conduction and convection to keep LED junctions within safe operating temperatures, preserving lifespan and performance."
+        },
+        "step3": {
+          "title": "Connectivity & Control",
+          "desc": "Connectors establish secure electrical connections between LED components, while dimmers and controllers adjust current flow to modify brightness, color, or lighting patterns as needed."
+        }
+      },
+      "specificationsSection": {
+        "title": "Specifications & Materials"
+      },
+      "faqs": {
+        "questions": [
+          "Difference between constant current and constant voltage drivers",
+          "Choosing the right heat sink size",
+          "Dimmer compatibility with LED systems",
+          "Waterproofing considerations for outdoor use",
+          "Wiring multiple LEDs with accessories",
+          "Lifespan of LED accessories"
+        ],
+        "answers": [
+          "Constant current drivers maintain fixed current (critical for high-power LEDs); constant voltage drivers provide stable voltage (ideal for LED strips and modules with built-in current regulation).",
+          "Heat sink size depends on LED power (larger heat sinks for higher wattage), ambient temperature, and enclosure type – calculate based on total heat dissipation (Watts) and thermal resistance.",
+          "Check dimmer compatibility with LED driver type; PWM dimmers work with most drivers, while 0-10V/DALI require compatible drivers for smooth operation without flickering.",
+          "Use IP65+ rated connectors and drivers for outdoor use; seal heat sink mounting points with gaskets; avoid non-weatherproof accessories in exposed areas.",
+          "Parallel wiring with constant voltage drivers for consistent brightness; series wiring with constant current drivers for current sharing; use junction boxes for safe connections.",
+          "LED drivers typically last 50,000-100,000 hours; heat sinks (if properly maintained) can last decades; connectors have 10,000+ mating cycles with proper use."
+        ]
+      },
+      "industries": {
+        "commercial": "Commercial",
+        "commercialItems": [
+          "Dimmable drivers for office lighting",
+          "Track connectors for retail displays",
+          "Heat sinks for high-bay fixtures"
+        ],
+        "residential": "Residential",
+        "residentialItems": [
+          "Plug-and-play LED strip connectors",
+          "Smart dimmers for home lighting",
+          "Mounting brackets for recessed LEDs"
+        ],
+        "industrial": "Industrial",
+        "industrialItems": [
+          "High-power drivers for factory lighting",
+          "Heavy-duty heat sinks for industrial LEDs",
+          "Waterproof connectors for outdoor facilities"
+        ],
+        "automotive": "Automotive",
+        "automotiveItems": [
+          "LED drivers for vehicle lighting",
+          "Miniature connectors for interior LEDs",
+          "Heat management kits for headlight LEDs"
+        ],
+        "stageEntertainment": "Stage & Entertainment",
+        "stageEntertainmentItems": [
+          "DMX controllers for stage LEDs",
+          "RGB connectors for color-changing systems",
+          "Quick-mount brackets for moving lights"
+        ]
+      }
+    },
+    "Spacer-Standoff": {
+      "metadata": {
+        "title": "Spacers & Standoffs | Professional Positioning Solutions",
+        "description": "Comprehensive positioning solutions for electronics, machinery, and construction. High-quality spacers and standoffs for precise spacing, support, and insulation.",
+        "coverImage": "/images/product/navbar/big-spacer-standoff.jpg"
+      },
+      "hero": {
+        "title": "Professional Positioning Solutions",
+        "subtitle": "Comprehensive positioning solutions for electronics, machinery, and construction. High-quality spacers and standoffs for precise spacing, support, and insulation."
+      },
+      "whatIs": {
+        "title": "What are Spacers & Standoffs?",
+        "desc1": "Spacers and standoffs are mechanical components used to create precise gaps, separate surfaces, or provide elevated support between two or more parts. They maintain consistent distances, prevent contact, and enhance structural stability in assemblies.",
+        "desc2": "Common types include threaded spacers, unthreaded spacers, hexagonal standoffs, round standoffs, and insulating spacers, each designed for specific spacing requirements, load capacities, and material compatibility. These components work by acting as rigid separators that maintain fixed distances while distributing weight and reducing friction between connected parts."
+      },
+      "quality": {
+        "title": "Why Choose High-Quality Spacers & Standoffs?",
+        "table": {
+          "header": {
+            "quality": "Spacer-Standoff Quality",
+            "dimensionalPrecision": "Dimensional Precision",
+            "loadBearer": "Load Bearing",
+            "environmentalResistance": "Environmental Resistance",
+            "applications": "Applications"
+          },
+          "highQuality": {
+            "name": "High-Quality",
+            "precision": "Meets/exceeds industry standards (e.g., ISO 9001)",
+            "load": "Consistent performance under specified weight limits",
+            "resistance": "Chemically resistant, stable in extreme temperatures",
+            "applications": "Aerospace, medical devices, precision electronics"
+          },
+          "lowGrade": {
+            "name": "Low-Grade",
+            "precision": "Inconsistent dimensions, poor tolerances",
+            "load": "Prone to deformation under minimal weight",
+            "resistance": "Degrades in moisture, chemicals, or temperature changes",
+            "applications": "Temporary fixtures, low-stress hobby projects"
+          },
+          "generic": {
+            "name": "Generic",
+            "precision": "Adequate for non-critical spacing needs",
+            "load": "Suitable for light, static loads",
+            "resistance": "Basic protection in controlled environments",
+            "applications": "Consumer electronics, furniture assembly, simple DIY"
+          }
+        },
+        "specifications": {
+          "title": "Common Specifications",
+          "items": [
+            "Length (2mm-100mm, custom lengths available)",
+            "Outer Diameter (3mm-50mm, based on application)",
+            "Inner Diameter/Thread Size (M2-M12 metric; #2-1/4\" imperial)",
+            "Material Options (Aluminum, brass, stainless steel, nylon, PVC)",
+            "Finish (Plain, anodized, plated, or coated)"
+          ]
+        },
+        "performance": {
+          "title": "Performance Characteristics",
+          "items": [
+            "Tensile Strength (varies by material: 40-1200 MPa)",
+            "Temperature Range (-50°C to 200°C, depending on material)",
+            "Electrical Insulation (for non-metallic types: 10^12-10^16 Ω·cm)",
+            "Chemical Resistance (resistance to oils, solvents, and corrosives)"
+          ]
+        }
+      },
+      "productSeries": {
+        "title": "Our Spacer & Standoff Product Series",
+        "subtitle": "Our product range covers diverse spacer and standoff types for every positioning need",
+        "applicationsLabel": "Applications:"
+      },
+      "howItWorks": {
+        "title": "How Do Spacers & Standoffs Work?",
+        "step1": {
+          "title": "Distance Maintenance",
+          "desc": "Spacers fit between components to create fixed gaps, preventing contact between sensitive parts (e.g., circuit boards and enclosures) or ensuring proper airflow in electronic assemblies."
+        },
+        "step2": {
+          "title": "Structural Support",
+          "desc": "Standoffs elevate and secure components, distributing weight evenly across assemblies. Threaded standoffs allow for secure attachment via screws, creating rigid frameworks in machinery and electronics."
+        },
+        "step3": {
+          "title": "Insulation & Isolation",
+          "desc": "Non-metallic spacers provide electrical insulation between conductive parts, preventing short circuits. They also isolate components from vibrations and reduce noise in mechanical systems."
+        }
+      },
+      "specificationsSection": {
+        "title": "Specifications & Materials"
+      },
+      "faqs": {
+        "questions": [
+          "Difference between spacer and standoff",
+          "Choosing the right material",
+          "Threaded vs unthreaded options",
+          "Length calculation for spacing needs",
+          "Installation considerations",
+          "High-temperature applications"
+        ],
+        "answers": [
+          "Spacers are typically unthreaded, creating gaps between parts; standoffs are usually threaded, providing both spacing and secure attachment points for components.",
+          "Metal (aluminum, steel) for strength and conductivity; nylon/PVC for insulation and corrosion resistance; brass for electrical conductivity and aesthetics.",
+          "Threaded options offer secure, adjustable connections; unthreaded spacers provide simple spacing with external fasteners (e.g., bolts through the center).",
+          "Calculate required length as the desired gap plus any material thickness of connected parts; account for thread engagement (typically 1.5× diameter for secure attachment).",
+          "Ensure compatible thread sizes with mating fasteners; verify load capacity for structural applications; use adhesives for permanent installations if needed.",
+          "For high temperatures, select stainless steel (up to 500°C) or ceramic spacers (up to 1000°C); avoid plastics above 100-200°C depending on material."
+        ]
+      },
+      "industries": {
+        "electronics": "Electronics",
+        "electronicsItems": [
+          "PCB standoffs for circuit boards",
+          "Insulating spacers for components",
+          "Threaded spacers for enclosures"
+        ],
+        "aerospace": "Aerospace",
+        "aerospaceItems": [
+          "Lightweight aluminum standoffs",
+          "High-strength spacers for avionics",
+          "Corrosion-resistant mounting components"
+        ],
+        "medicalDevices": "Medical Devices",
+        "medicalDevicesItems": [
+          "Stainless steel standoffs for equipment",
+          "Plastic spacers for sterile environments",
+          "Precision positioning components"
+        ],
+        "automotive": "Automotive",
+        "automotiveItems": [
+          "Dashboard component spacers",
+          "Electrical system standoffs",
+          "Engine bay heat-resistant spacers"
+        ],
+        "construction": "Construction",
+        "constructionItems": [
+          "Structural standoffs for cladding",
+          "Insulating spacers for fixtures",
+          "Heavy-duty spacing components"
+        ]
+      }
+    },
+    "Wiring-Accessories": {
+      "metadata": {
+        "title": "Wiring Accessories | Professional Electrical Connection Solutions",
+        "description": "Comprehensive electrical connection solutions for residential, commercial, and industrial applications. High-quality terminals, connectors, cable ties, and more.",
+        "coverImage": "/images/product/navbar/big-wiring-accessories.jpg"
+      },
+      "hero": {
+        "title": "Professional Electrical Connection Solutions",
+        "subtitle": "Comprehensive electrical connection solutions for residential, commercial, and industrial applications. High-quality terminals, connectors, cable ties, and more."
+      },
+      "whatIs": {
+        "title": "What are Wiring Accessories?",
+        "desc1": "Wiring accessories are essential components used to connect, protect, organize, and terminate electrical wires and cables. They ensure safe, reliable, and efficient electrical connections in various systems.",
+        "desc2": "Common types include terminal blocks, wire connectors, cable ties, junction boxes, cable glands, and wire markers, each designed for specific wire gauges, voltage ratings, and environmental conditions. These accessories work by establishing secure electrical contact, preventing short circuits, managing cable routing, and providing insulation."
+      },
+      "quality": {
+        "title": "Why Choose High-Quality Wiring Accessories?",
+        "table": {
+          "header": {
+            "quality": "Wiring Accessory Quality",
+            "electricalSafety": "Electrical Safety",
+            "mechanicalStrength": "Mechanical Strength",
+            "environmentalResistance": "Environmental Resistance",
+            "applications": "Applications"
+          },
+          "highQuality": {
+            "name": "High-Quality",
+            "safety": "Meets/exceeds industry standards (e.g., IEC 60998)",
+            "strength": "Robust construction for secure, long-term connections",
+            "resistance": "Resistant to moisture, heat, chemicals, and UV",
+            "applications": "Industrial control systems, power distribution, aerospace"
+          },
+          "lowGrade": {
+            "name": "Low-Grade",
+            "safety": "Inconsistent conductivity, risk of overheating",
+            "strength": "Weak materials prone to breakage or loosening",
+            "resistance": "Fails in harsh environments, poor insulation",
+            "applications": "Temporary wiring, low-voltage hobby projects"
+          },
+          "generic": {
+            "name": "Generic",
+            "safety": "Adequate for basic low-power applications",
+            "strength": "Suitable for light-duty, indoor use",
+            "resistance": "Limited protection in controlled environments",
+            "applications": "Residential wiring, small electronics"
+          }
+        },
+        "specifications": {
+          "title": "Common Specifications",
+          "items": [
+            "Wire Gauge Compatibility (0.5mm²-100mm²)",
+            "Voltage Rating (300V-1000V AC/DC)",
+            "Current Rating (1A-200A)",
+            "Material (Copper, brass, nylon, PVC, stainless steel)",
+            "IP Rating (IP20-IP68 for environmental protection)"
+          ]
+        },
+        "performance": {
+          "title": "Performance Characteristics",
+          "items": [
+            "Contact Resistance (≤5mΩ for high-quality terminals)",
+            "Operating Temperature Range (-40°C to 150°C)",
+            "Insulation Resistance (≥100MΩ at 500V DC)",
+            "Vibration Resistance (up to 20g for industrial grade)"
+          ]
+        }
+      },
+      "productSeries": {
+        "title": "Our Wiring Accessories Product Series",
+        "subtitle": "Our product range covers diverse wiring accessories for every connection need",
+        "applicationsLabel": "Applications:"
+      },
+      "howItWorks": {
+        "title": "How Do Wiring Accessories Work?",
+        "step1": {
+          "title": "Electrical Connection",
+          "desc": "Terminal blocks and wire connectors create conductive paths between wires, ensuring low-resistance current flow. They use clamping or crimping mechanisms to maintain secure contact between conductors."
+        },
+        "step2": {
+          "title": "Protection & Insulation",
+          "desc": "Junction boxes and cable glands enclose connections, protecting them from physical damage, moisture, and dust. Insulating materials prevent accidental contact with live parts, reducing shock risks."
+        },
+        "step3": {
+          "title": "Organization & Management",
+          "desc": "Cable ties, clips, and raceways organize and secure cables, preventing tangling and strain on connections. Wire markers enable easy identification of conductors for maintenance and troubleshooting."
+        }
+      },
+      "specificationsSection": {
+        "title": "Specifications & Materials"
+      },
+      "faqs": {
+        "questions": [
+          "Difference between crimp and screw terminals",
+          "Choosing the right cable gland",
+          "IP rating requirements for outdoor use",
+          "Wire gauge vs current rating",
+          "Reusable vs one-time connectors",
+          "Fire safety considerations"
+        ],
+        "answers": [
+          "Crimp terminals create permanent connections via mechanical deformation; screw terminals allow reusable connections by clamping wires with a screw mechanism.",
+          "Select based on cable diameter, thread size, material (brass for conductivity, stainless steel for corrosion), and required IP rating for environmental protection.",
+          "Outdoor wiring requires minimum IP65 rating (water jet resistant); submersible applications need IP68 (waterproof beyond 1m depth).",
+          "Larger wire gauges (smaller numbers) handle higher currents; e.g., 10mm² wire typically supports 50-60A, while 0.75mm² supports 6-10A (varies by insulation).",
+          "Reusable connectors (screw terminals) are ideal for frequent maintenance; one-time connectors (crimps, heat-shrink) offer more secure, permanent connections.",
+          "Choose flame-retardant materials (UL94 V-0 rating), use fire-resistant junction boxes, and ensure proper spacing to prevent overheating-induced fires."
+        ]
+      },
+      "industries": {
+        "residential": "Residential",
+        "residentialItems": [
+          "Socket outlets",
+          "Light switches",
+          "Wire connectors for home wiring"
+        ],
+        "commercial": "Commercial",
+        "commercialItems": [
+          "Junction boxes for office buildings",
+          "Cable management systems",
+          "Power distribution terminals"
+        ],
+        "industrial": "Industrial",
+        "industrialItems": [
+          "Heavy-duty terminal blocks",
+          "Explosion-proof cable glands",
+          "High-current connectors"
+        ],
+        "automotive": "Automotive",
+        "automotiveItems": [
+          "Wire harness connectors",
+          "Fuse holders",
+          "Battery terminals"
+        ],
+        "renewableEnergy": "Renewable Energy",
+        "renewableEnergyItems": [
+          "Solar panel connectors",
+          "Wind turbine cable glands",
+          "Inverter wiring terminals"
+        ]
+      }
+    },
+    "Gas-Spring": {
+      "metadata": {
+        "title": "Gas Springs | Professional Gas Spring Solutions",
+        "description": "Comprehensive gas spring solutions for industrial equipment, furniture, automotive, and medical fields. High-quality gas springs for support, buffering, and adjustment.",
+        "coverImage": "/images/product/navbar/big-gas-spring.jpg"
+      },
+      "hero": {
+        "title": "Professional Gas Spring Solutions",
+        "subtitle": "Comprehensive gas spring solutions for industrial equipment, furniture, automotive, and medical fields. High-quality gas springs for support, buffering, and adjustment."
+      },
+      "whatIs": {
+        "title": "What is a Gas Spring?",
+        "desc1": "Gas springs are versatile mechanical devices that enable controlled lifting, lowering, supporting, and cushioning of loads across various applications. They facilitate smooth, regulated movement of components, ensuring stability and safety in operations ranging from furniture adjustment to industrial machinery operation, by generating consistent force to manage weight and motion.",
+        "desc2": "Gas springs operate based on the principle of pressure differentials within a sealed system. A piston attached to a rod moves inside a cylinder filled with pressurized nitrogen gas; as the rod is extended or compressed, the gas is forced to redistribute, creating a counterforce that opposes the external load. This pressure-driven interaction between the internal gas and the moving components produces the linear force necessary for their functional movements."
+      },
+      "quality": {
+        "title": "Why Choose High-Quality Gas Springs?",
+        "table": {
+          "header": {
+            "quality": "Gas Spring Quality",
+            "loadCapacity": "Load Capacity",
+            "corrosionResistance": "Corrosion Resistance",
+            "durability": "Durability",
+            "applications": "Applications"
+          },
+          "highQuality": {
+            "name": "High-Quality",
+            "load": "Meets/exceeds industry standards (e.g., ISO 11901)",
+            "corrosion": "Premium coatings (chrome plating) and seals, stainless steel components",
+            "durability": "Stable force output, long service life (50,000+ cycles)",
+            "applications": "Aerospace, medical equipment, precision machinery"
+          },
+          "lowGrade": {
+            "name": "Low-Grade",
+            "load": "Inconsistent force, significant deviation over time",
+            "corrosion": "Poor plating, prone to rust and seal failure",
+            "durability": "Short lifespan, force decay after few cycles",
+            "applications": "Temporary fixtures, low-cost toys"
+          },
+          "generic": {
+            "name": "Generic",
+            "load": "Basic load handling, moderate consistency",
+            "corrosion": "Standard plating, limited to dry environments",
+            "durability": "Adequate for light loads, limited cycles",
+            "applications": "General furniture, non-critical equipment"
+          }
+        },
+        "specifications": {
+          "title": "Common Specifications",
+          "items": [
+            "Stroke Length (50mm-500mm)",
+            "Force Range (50N-2000N)",
+            "Cylinder Diameter (10mm-50mm)",
+            "Rod Diameter (6mm-25mm)",
+            "Operating Temperature (-30°C to 80°C)"
+          ]
+        },
+        "performance": {
+          "title": "Performance Characteristics",
+          "items": [
+            "Force Tolerance (±5% for high-quality)",
+            "Damping Characteristics (adjustable for speed control)",
+            "Service Life (number of cycles before force decay)",
+            "Pressure Resistance (internal gas pressure stability)"
+          ]
+        }
+      },
+      "productSeries": {
+        "title": "Our Gas Spring Product Series",
+        "subtitle": "Our product range covers diverse gas spring types for every application",
+        "applicationsLabel": "Applications:"
+      },
+      "howItWorks": {
+        "title": "How Do Gas Springs Work?",
+        "step1": {
+          "title": "Gas Pressure",
+          "desc": "A sealed cylinder contains compressed nitrogen gas. When a force is applied to the rod, the gas is further compressed, creating a counterforce that resists the movement, providing support or cushioning."
+        },
+        "step2": {
+          "title": "Force Transmission & Balance",
+          "desc": "The pressure difference between the gas in the cylinder and the external environment generates a linear force on the piston. This force is transmitted through the rod, enabling controlled lifting, lowering, or positioning of loads. The damping mechanism regulates the speed of movement."
+        },
+        "step3": {
+          "title": "Locking & Control",
+          "desc": "Lockable gas springs use a valve or mechanical mechanism to trap gas in the cylinder, locking the rod in a fixed position. Release mechanisms (levers, buttons) allow the gas to flow freely again, enabling repositioning."
+        }
+      },
+      "specificationsSection": {
+        "title": "Specifications & Materials"
+      },
+      "faqs": {
+        "questions": [
+          "Difference between free-type and lockable gas springs",
+          "How to choose the right force value",
+          "Service life factors",
+          "Installation direction requirements",
+          "Temperature impact on performance",
+          "Maintenance methods"
+        ],
+        "answers": [
+          "Free-type gas springs have only two end positions (fully extended/retracted) with no locking in between, while lockable ones can be fixed at any point in their stroke using a locking mechanism.",
+          "Calculate based on the load weight, installation angle, and desired movement (lifting, lowering, supporting). It's recommended to select a force 1.2-1.5 times the calculated required force for safety.",
+          "Depends on cycle frequency, operating temperature, load magnitude, and environmental conditions (dust, moisture). High-quality springs typically last 50,000+ cycles under normal use.",
+          "Most gas springs are designed for specific installation orientations (e.g., rod up/down). Incorrect installation can reduce performance and lifespan; refer to product specifications.",
+          "Extreme temperatures affect gas pressure: low temps reduce force, high temps increase it. Special formulations are available for extreme temperature ranges (-40°C to 120°C).",
+          "Keep clean, avoid damage to the rod surface, and ensure proper mounting. Do not disassemble or puncture the cylinder, as it contains high-pressure gas."
+        ]
+      },
+      "industries": {
+        "automotive": "Automotive",
+        "automotiveItems": [
+          "Trunk lid supports",
+          "Bonnet stays",
+          "Seat adjustment mechanisms",
+          "Door hinges with damping"
+        ],
+        "furniture": "Furniture",
+        "furnitureItems": [
+          "Cabinet door supports",
+          "Sofa bed adjustment",
+          "Desk height adjustment",
+          "Mattress lifters"
+        ],
+        "medical": "Medical",
+        "medicalItems": [
+          "Hospital bed adjustment",
+          "Dental chair positioning",
+          "Medical cart supports",
+          "Rehabilitation equipment"
+        ],
+        "industrialMachinery": "Industrial Machinery",
+        "industrialMachineryItems": [
+          "Machine hood supports",
+          "Conveyor belt tensioners",
+          "Tooling fixture adjustment",
+          "Safety guard dampers"
+        ],
+        "aerospace": "Aerospace",
+        "aerospaceItems": [
+          "Cargo door actuators",
+          "Seat adjustment systems",
+          "Lavatory door supports",
+          "Cabin equipment mounts"
+        ]
+      }
+    }
+  },
   "spotlights": {
     "solarDamperShort": "Solar Damper",
     "solarDamperLong": "A comprehensive solution for solar damper systems, check full whitepaper now"
@@ -173,5 +1869,6 @@
   "terms": {
     "title": "Terms of Use",
     "description": "A complete agreement covering Terms of Service, liability attribution, data privacy, product policies (ordering/delivery/returns/warranty), disclaimer, and governing law."
-  }
+  },
+  "categoryViewMore": "View More"
 }

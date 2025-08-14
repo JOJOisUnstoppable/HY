@@ -1,7 +1,6 @@
 'use client'
 
 import { ProductCard } from '@/components/products/ProductCard'
-import { ProductHero } from '@/components/products/ProductHero'
 import {
   FastenerHeroSection,
   WhatIsFastenerSection,
@@ -11,9 +10,8 @@ import {
   SpecificationsSection,
   InstallationGuidelinesSection,
   IndustryApplicationsSection,
-  FaqSection,
-  ContactSection,
-  fastenerFaqs
+  FaqSectionP,
+  ContactSection
 } from '@/components/products/landingpage'
 import { Locale } from '@/lib/i18n/config'
 import { BentoGrid } from "@/components/magicui/bento-grid"
@@ -32,13 +30,17 @@ export default function CategoryPageClient({
   category, 
   products, 
   dict, 
-  locale 
+  locale,
 }: CategoryPageClientProps) {
 
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
   const toggleFaq = (index: number) => {
     setExpandedFaq(expandedFaq === index ? null : index);
   };
+  
+  // 获取 categoryId
+  const categoryId = category.id;
+  
   return (
     <>
       {/* 产品详细介绍部分 - 应用home页面的背景和布局风格 */}
@@ -46,8 +48,8 @@ export default function CategoryPageClient({
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 via-transparent to-purple-50/30" />
         <div className="absolute inset-0 bg-grid-slate-200/50 [mask-image:linear-gradient(0deg,transparent,black,transparent)] dark:bg-grid-slate-700/25" />
         <div className="relative">
-          <FastenerHeroSection />
-          <WhatIsFastenerSection />
+          <FastenerHeroSection dict={dict} categoryId={categoryId} />
+          <WhatIsFastenerSection dict={dict} categoryId={categoryId} />
           {/* 产品列表部分 - 应用home页面的容器和网格风格 */}
           <div className="relative container max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 via-transparent to-purple-50/30" />
@@ -64,8 +66,8 @@ export default function CategoryPageClient({
 
               {/* 使用BentoGrid布局，与home页面保持一致 */}
               <BentoGrid className="grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 auto-rows-[16rem] [&>*]:transition-[grid-column] [&>*]:duration-500">
-                {products.map((product) => (
-                  <div key={product.id} className="group">
+                {products.map((product, index) => (
+                  <div key={`${product.id}-${index}`} className="group">
                     <ProductCard
                       product={{
                         id: product.id,
@@ -81,15 +83,11 @@ export default function CategoryPageClient({
             </div>
           </div>
 
-          <QualityComparisonSection />
-          <HowItWorksSection />
-          <SpecificationsSection />
-          <InstallationGuidelinesSection />
-          <FaqSection
-            faqs={fastenerFaqs}
-            expandedFaq={expandedFaq}
-            toggleFaq={toggleFaq}
-          />
+          <QualityComparisonSection dict={dict} categoryId={categoryId} />
+          <HowItWorksSection dict={dict} categoryId={categoryId} />
+          <SpecificationsSection dict={dict} categoryId={categoryId} />
+          <InstallationGuidelinesSection dict={dict} categoryId={categoryId} />
+          <FaqSectionP dict={dict} categoryId={categoryId} />
           <ContactSection />
         </div>
       </div>

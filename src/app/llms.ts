@@ -8,7 +8,7 @@ import { getProductData } from '@/lib/products'
 //import { MetadataRoute } from 'next'
 
 export default async function llms(): Promise<string> {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dkgasspring.com'
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.diskdamper.com'
 
   try {
     // 获取所有语言的数据

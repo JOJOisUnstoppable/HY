@@ -1,8 +1,6 @@
 
 import { Locale } from '@/lib/i18n/config'
 import { getDictionary } from '@/lib/i18n/getDictionary'
-import { ProductCard } from '@/components/products/ProductCard'
-import { ProductHero } from '@/components/products/ProductHero'
 import { getProductData, getProductsByCategory } from '@/lib/products'
 import { notFound } from 'next/navigation'
 import CategoryPageClient from '@/components/products/CategoryPageClient'
@@ -27,7 +25,6 @@ export default async function CategoryPage(
   if (!category) {
     notFound()
   }
-
   return (
     <CategoryPageClient 
       category={category}

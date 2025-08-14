@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   description: 'Professional Gas Spring Solutions for Global Manufacturing',
   keywords: ['gas spring', 'gas strut', 'gas lift', 'damper', 'industrial hardware'],
   authors: [{ name: 'Gas Spring Solutions' }],
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dkgasspring.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://www.diskdamper.com'),
   openGraph: {
     type: 'website',
     siteName: 'Gas Spring Solutions',
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Gas Spring Solutions",
-      "url": process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dkgasspring.com',
+      "url": process.env.NEXT_PUBLIC_BASE_URL || 'https://www.diskdamper.com',
       "logo": `${process.env.NEXT_PUBLIC_BASE_URL}/logo.svg`,
       "image": `${process.env.NEXT_PUBLIC_BASE_URL}/images/og-image.jpg`,
       "description": "Professional Gas Spring Solutions for Global Manufacturing",

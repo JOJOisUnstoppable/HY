@@ -1,11 +1,9 @@
-'use client'
 import { getDictionary } from '@/lib/i18n/getDictionary'
 import { Locale } from '@/lib/i18n/config'
 import { CategoryCard } from '@/components/products/CategoryCard'
 import { getProductData } from '@/lib/products'
 import { ProductAllHero } from '@/components/products/ProductAllHero'
 import { BentoGrid } from "@/components/magicui/bento-grid"
-import FastenersPage from '@/components/products/landingpage';
 
 export default async function ProductsPage(
   props: {
@@ -32,11 +30,7 @@ export default async function ProductsPage(
           <div className="text-gray-600 max-w-2xl mx-auto prose"
             dangerouslySetInnerHTML={{ __html: content }} />
         </div>
-        {/* 文字部分 */}
-        <div className="mb-12 border-2 border-red-500"> 
-          <FastenersPage />
-        </div>
-
+        
         <BentoGrid className="grid-cols-1 lg:grid-cols-12 auto-rows-[310px] lg:auto-rows-[430px] [&>*]:transition-[grid-column] [&>*]:duration-500">
           {categories
             .sort((a, b) => a.order - b.order)

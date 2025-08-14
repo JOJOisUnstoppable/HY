@@ -5,7 +5,7 @@ import { MetadataRoute } from 'next'
 type ChangeFreq = 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.dkgasspring.com' // 修复 URL
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.diskdamper.com' // 修复 URL
 
   try {
     // 获取所有博客文章和标签

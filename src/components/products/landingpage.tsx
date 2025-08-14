@@ -1,7 +1,12 @@
 // components/FastenersModule.tsx
-import Image from 'next/image';
 import { useState } from 'react';
 import { BentoGrid } from "@/components/magicui/bento-grid";
+
+// 头部区域组件
+interface landingpagedictprops {
+  dict: any;
+  categoryId: string; // 新增 categoryId 参数
+}
 
 // 类型定义
 export interface FAQ {
@@ -26,6 +31,14 @@ export interface PageMetadata {
   description: string;
   coverImage: string;
 }
+// 颜色配置（保持不变）
+const industryColors = [
+  'from-blue-500 to-blue-700',
+  'from-orange-500 to-orange-700',
+  'from-green-500 to-green-700',
+  'from-purple-500 to-purple-700',
+  'from-red-500 to-red-700'
+];
 
 // 共享数据
 export const fastenerMetadata: PageMetadata = {
@@ -34,32 +47,7 @@ export const fastenerMetadata: PageMetadata = {
   coverImage: '/images/product/navbar/big-fastener.jpg'
 };
 
-export const fastenerFaqs: FAQ[] = [
-  {
-    question: 'Difference between bolt and screw',
-    answer: 'Bolts are designed to be used with nuts; screws thread directly into a tapped hole or material (wood, plastic, metal).'
-  },
-  {
-    question: 'Choosing fastener material',
-    answer: 'For outdoor use, select 304/316 stainless steel; for high strength, choose 8.8+ grade alloy steel.'
-  },
-  {
-    question: 'Reusability',
-    answer: 'Threaded fasteners can be reused if threads are undamaged; rivets and blind fasteners are single-use.'
-  },
-  {
-    question: 'Torque calculation',
-    answer: 'Torque = K × D × F (K=coefficient, D=thread diameter, F=clamping force) – refer to industry charts for K values.'
-  },
-  {
-    question: 'Corrosion prevention',
-    answer: 'Apply anti-corrosion coatings (zinc plating), use dielectric grease, or select corrosion-resistant materials.'
-  },
-  {
-    question: 'Load capacity',
-    answer: 'Depends on thread size (larger diameter = higher load), material grade, and installation torque.'
-  }
-];
+
 
 export const fastenerProducts: ProductSeries[] = [
   {
@@ -93,19 +81,17 @@ export const fastenerIndustries: Industry[] = [
 ];
 
 // 头部区域组件
-export const FastenerHeroSection = () => (
+export const FastenerHeroSection = ({ dict, categoryId }: landingpagedictprops) => (
   <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
     <div className="absolute inset-0 bg-[url('/images/hero-bg.jpg')] bg-cover bg-center opacity-10" />
     <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent" />
     <div className="relative container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
       <div className="max-w-4xl">
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-          Professional
-          <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent"> Fastening </span>
-          Solutions
+          {dict.landingpage[categoryId]?.hero?.title || 'Professional Solutions'}
         </h1>
         <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-2xl">
-          Comprehensive fastening solutions for industrial assembly, construction, and manufacturing. High-quality screws, bolts, nuts, and more.
+          {dict.landingpage[categoryId]?.hero?.subtitle || 'Comprehensive solutions for your needs.'}
         </p>
         <div className="flex flex-wrap gap-4">
           <button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
@@ -120,8 +106,8 @@ export const FastenerHeroSection = () => (
   </section>
 );
 
-// 什么是紧固件组件
-export const WhatIsFastenerSection = () => (
+// 什么是产品组件
+export const WhatIsFastenerSection = ({ dict, categoryId }: landingpagedictprops) => (
   <section id="what-is" className="relative py-24 overflow-hidden">
     <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-transparent to-purple-50/50" />
     <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -130,17 +116,17 @@ export const WhatIsFastenerSection = () => (
           <span className="text-2xl">🔩</span>
         </div>
         <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">
-          What is a Fastener?
+          {dict.landingpage[categoryId]?.whatIs?.title || 'What is this Product?'}
         </h2>
         <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 mx-auto mb-8" />
       </div>
       <div className="max-w-4xl mx-auto">
         <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-xl border border-white/20">
           <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-            Fasteners are mechanical components used to join or secure two or more objects together. They create non-permanent or permanent connections, allowing for easy assembly, disassembly, or maintenance when needed.
+            {dict.landingpage[categoryId].whatIs?.desc1 || 'This is the Product'}
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">
-            Common types include screws, bolts, nuts, washers, rivets, and clips, each designed for specific load, material, and environmental conditions. Fasteners work by creating clamping force, friction, or mechanical interlock to prevent separation of connected parts.
+            {dict.landingpage[categoryId]?.whatIs?.desc2 || ''}
           </p>
         </div>
       </div>
@@ -148,8 +134,8 @@ export const WhatIsFastenerSection = () => (
   </section>
 );
 
-// 为什么选择高质量紧固件组件
-export const QualityComparisonSection = () => (
+// 为什么选择高质量产品组件
+export const QualityComparisonSection = ({ dict, categoryId }: landingpagedictprops) => (
   <section className="py-24 bg-gradient-to-br from-slate-100 to-blue-50">
     <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-16">
@@ -157,44 +143,44 @@ export const QualityComparisonSection = () => (
           <span className="text-2xl">⭐</span>
         </div>
         <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">
-          Why Choose High-Quality Fasteners?
+          {dict.landingpage[categoryId]?.quality?.title || 'Why Choose High-Quality Products?'}
         </h2>
         <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-red-500 mx-auto mb-8" />
       </div>
-      
+
       <div className="bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden shadow-xl border border-white/20 mb-16">
         <div className="overflow-x-auto">
           <table className="min-w-full">
             <thead className="bg-gradient-to-r from-slate-800 to-slate-700">
               <tr>
-                <th className="py-6 px-8 text-left text-white font-bold text-lg">Fastener Quality</th>
-                <th className="py-6 px-8 text-left text-white font-bold text-lg">Load Capacity</th>
-                <th className="py-6 px-8 text-left text-white font-bold text-lg">Corrosion Resistance</th>
-                <th className="py-6 px-8 text-left text-white font-bold text-lg">Durability</th>
-                <th className="py-6 px-8 text-left text-white font-bold text-lg">Applications</th>
+                <th className="py-6 px-8 text-left text-white font-bold text-lg">{dict.landingpage[categoryId]?.quality?.table?.header?.quality || 'Quality'}</th>
+                <th className="py-6 px-8 text-left text-white font-bold text-lg">{dict.landingpage[categoryId]?.quality?.table?.header?.loadCapacity || dict.landingpage[categoryId]?.quality?.table?.header?.sealIntegrity || dict.landingpage[categoryId]?.quality?.table?.header?.weightCapacity || 'Capacity'}</th>
+                <th className="py-6 px-8 text-left text-white font-bold text-lg">{dict.landingpage[categoryId]?.quality?.table?.header?.corrosionResistance || dict.landingpage[categoryId]?.quality?.table?.header?.materialDurability || dict.landingpage[categoryId]?.quality?.table?.header?.floorProtection || 'Resistance'}</th>
+                <th className="py-6 px-8 text-left text-white font-bold text-lg">{dict.landingpage[categoryId]?.quality?.table?.header?.durability || dict.landingpage[categoryId]?.quality?.table?.header?.temperatureResistance || 'Durability'}</th>
+                <th className="py-6 px-8 text-left text-white font-bold text-lg">{dict.landingpage[categoryId]?.quality?.table?.header?.applications || 'Applications'}</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
               <tr className="hover:bg-gradient-to-r hover:from-green-50 hover:to-emerald-50 transition-all duration-300">
-                <td className="py-6 px-8 font-bold text-green-700 text-lg">High-Quality</td>
-                <td className="py-6 px-8 text-gray-700">Meets/exceeds industry standards (e.g., ISO 898)</td>
-                <td className="py-6 px-8 text-gray-700">Premium coatings (zinc, nickel) or materials (stainless steel)</td>
-                <td className="py-6 px-8 text-gray-700">Resists fatigue, vibration loosening</td>
-                <td className="py-6 px-8 text-gray-700">Industrial machinery, aerospace, medical equipment</td>
+                <td className="py-6 px-8 font-bold text-green-700 text-lg">{dict.landingpage[categoryId]?.quality?.table?.highQuality?.name || 'High-Quality'}</td>
+                <td className="py-6 px-8 text-gray-700">{dict.landingpage[categoryId]?.quality?.table?.highQuality?.load || dict.landingpage[categoryId]?.quality?.table?.highQuality?.seal || dict.landingpage[categoryId]?.quality?.table?.highQuality?.weight || 'High performance'}</td>
+                <td className="py-6 px-8 text-gray-700">{dict.landingpage[categoryId]?.quality?.table?.highQuality?.corrosion || dict.landingpage[categoryId]?.quality?.table?.highQuality?.material || dict.landingpage[categoryId]?.quality?.table?.highQuality?.floor || 'Excellent resistance'}</td>
+                <td className="py-6 px-8 text-gray-700">{dict.landingpage[categoryId]?.quality?.table?.highQuality?.durability || dict.landingpage[categoryId]?.quality?.table?.highQuality?.temperature || 'Long-lasting'}</td>
+                <td className="py-6 px-8 text-gray-700">{dict.landingpage[categoryId]?.quality?.table?.highQuality?.applications || 'Professional applications'}</td>
               </tr>
               <tr className="hover:bg-gradient-to-r hover:from-red-50 hover:to-pink-50 transition-all duration-300">
-                <td className="py-6 px-8 font-bold text-red-700 text-lg">Low-Grade</td>
-                <td className="py-6 px-8 text-gray-700">Inconsistent, often below safety thresholds</td>
-                <td className="py-6 px-8 text-gray-700">Minimal/no protection, prone to rust</td>
-                <td className="py-6 px-8 text-gray-700">Fails prematurely under cyclic loads</td>
-                <td className="py-6 px-8 text-gray-700">Temporary fixtures, non-critical DIY projects</td>
+                <td className="py-6 px-8 font-bold text-red-700 text-lg">{dict.landingpage[categoryId]?.quality?.table?.lowGrade?.name || 'Low-Grade'}</td>
+                <td className="py-6 px-8 text-gray-700">{dict.landingpage[categoryId]?.quality?.table?.lowGrade?.load || dict.landingpage[categoryId]?.quality?.table?.lowGrade?.seal || dict.landingpage[categoryId]?.quality?.table?.lowGrade?.weight || 'Limited performance'}</td>
+                <td className="py-6 px-8 text-gray-700">{dict.landingpage[categoryId]?.quality?.table?.lowGrade?.corrosion || dict.landingpage[categoryId]?.quality?.table?.lowGrade?.material || dict.landingpage[categoryId]?.quality?.table?.lowGrade?.floor || 'Poor resistance'}</td>
+                <td className="py-6 px-8 text-gray-700">{dict.landingpage[categoryId]?.quality?.table?.lowGrade?.durability || dict.landingpage[categoryId]?.quality?.table?.lowGrade?.temperature || 'Short lifespan'}</td>
+                <td className="py-6 px-8 text-gray-700">{dict.landingpage[categoryId]?.quality?.table?.lowGrade?.applications || 'Basic applications'}</td>
               </tr>
               <tr className="hover:bg-gradient-to-r hover:from-yellow-50 hover:to-orange-50 transition-all duration-300">
-                <td className="py-6 px-8 font-bold text-yellow-700 text-lg">Generic</td>
-                <td className="py-6 px-8 text-gray-700">Moderate but unreliable load handling</td>
-                <td className="py-6 px-8 text-gray-700">Basic plating, limited lifespan</td>
-                <td className="py-6 px-8 text-gray-700">Adequate for light, static loads</td>
-                <td className="py-6 px-8 text-gray-700">Furniture assembly, non-structural parts</td>
+                <td className="py-6 px-8 font-bold text-yellow-700 text-lg">{dict.landingpage[categoryId]?.quality?.table?.generic?.name || 'Generic'}</td>
+                <td className="py-6 px-8 text-gray-700">{dict.landingpage[categoryId]?.quality?.table?.generic?.load || dict.landingpage[categoryId]?.quality?.table?.generic?.seal || dict.landingpage[categoryId]?.quality?.table?.generic?.weight || 'Moderate performance'}</td>
+                <td className="py-6 px-8 text-gray-700">{dict.landingpage[categoryId]?.quality?.table?.generic?.corrosion || dict.landingpage[categoryId]?.quality?.table?.generic?.material || dict.landingpage[categoryId]?.quality?.table?.generic?.floor || 'Basic resistance'}</td>
+                <td className="py-6 px-8 text-gray-700">{dict.landingpage[categoryId]?.quality?.table?.generic?.durability || dict.landingpage[categoryId]?.quality?.table?.generic?.temperature || 'Average lifespan'}</td>
+                <td className="py-6 px-8 text-gray-700">{dict.landingpage[categoryId]?.quality?.table?.generic?.applications || 'General applications'}</td>
               </tr>
             </tbody>
           </table>
@@ -207,29 +193,20 @@ export const QualityComparisonSection = () => (
             <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mr-4">
               <span className="text-white font-bold">📊</span>
             </div>
-            <h3 className="text-2xl font-bold text-gray-800">Common Specifications</h3>
+            <h3 className="text-2xl font-bold text-gray-800">{dict.landingpage[categoryId]?.quality?.specifications?.title || 'Specifications'}</h3>
           </div>
           <ul className="space-y-3 text-gray-700">
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-              Thread Size (Metric: M1.6-M30; Imperial: #0-1/2")
-            </li>
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-              Tensile Strength (4.8-12.9 grade for bolts)
-            </li>
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-              Drive Type (Phillips, hex, torx, square)
-            </li>
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-              Head Style (Countersunk, pan, hexagon)
-            </li>
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-              Length (5mm-300mm)
-            </li>
+            {dict.landingpage[categoryId]?.quality?.specifications?.items?.map((item: string, index: number) => (
+              <li key={index} className="flex items-start">
+                <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                {item}
+              </li>
+            )) || [
+              <li key={0} className="flex items-start">
+                <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                Specifications not available
+              </li>
+            ]}
           </ul>
         </div>
         <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/20">
@@ -237,25 +214,20 @@ export const QualityComparisonSection = () => (
             <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-4">
               <span className="text-white font-bold">⚡</span>
             </div>
-            <h3 className="text-2xl font-bold text-gray-800">Performance Characteristics</h3>
+            <h3 className="text-2xl font-bold text-gray-800">{dict.landingpage[categoryId]?.quality?.performance?.title || 'Performance'}</h3>
           </div>
           <ul className="space-y-3 text-gray-700">
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-              Torque Requirements (varies by size/grade)
-            </li>
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-              Shear Strength (resistance to lateral forces)
-            </li>
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-              Fatigue Life (cycles before failure under repeated load)
-            </li>
-            <li className="flex items-start">
-              <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-              Temperature Resistance (as per material)
-            </li>
+            {dict.landingpage[categoryId]?.quality?.performance?.items?.map((item: string, index: number) => (
+              <li key={index} className="flex items-start">
+                <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                {item}
+              </li>
+            )) || [
+              <li key={0} className="flex items-start">
+                <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                Performance data not available
+              </li>
+            ]}
           </ul>
         </div>
       </div>
@@ -267,7 +239,7 @@ export const QualityComparisonSection = () => (
 interface ProductSeriesSectionProps {
   products: ProductSeries[];
 }
-export const ProductSeriesSection = ({ products }: ProductSeriesSectionProps) => (
+export const ProductSeriesSection = ({ dict }: landingpagedictprops, { products }: ProductSeriesSectionProps) => (
   <section id="products" className="relative py-24 overflow-hidden">
     <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/50 via-transparent to-cyan-50/50" />
     <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -276,17 +248,17 @@ export const ProductSeriesSection = ({ products }: ProductSeriesSectionProps) =>
           <span className="text-2xl">🛠️</span>
         </div>
         <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">
-          Our Fastener Product Series
+          {dict.landingpage.Fasteners.faqs.productSeries.title}
         </h2>
         <div className="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto mb-8" />
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          Our product range covers diverse fastener types for every application
+          {dict.landingpage.Fasteners.faqs.productSeries.subtitle}
         </p>
       </div>
       <BentoGrid className="grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 auto-rows-[20rem] gap-6">
         {products.map((product, index) => (
-          <div 
-            key={index} 
+          <div
+            key={index}
             className="group bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 border border-white/20 hover:scale-105"
           >
             <div className="p-8 h-full flex flex-col relative overflow-hidden">
@@ -294,7 +266,7 @@ export const ProductSeriesSection = ({ products }: ProductSeriesSectionProps) =>
               <h3 className="text-2xl font-bold text-gray-800 mb-4 relative z-10">{product.title}</h3>
               <p className="text-gray-600 mb-4 flex-grow relative z-10 leading-relaxed">{product.details}</p>
               <div className="relative z-10">
-                <span className="text-sm font-semibold text-blue-600 uppercase tracking-wide">Applications:</span>
+                <span className="text-sm font-semibold text-blue-600 uppercase tracking-wide">{dict.landingpage.Fasteners.faqs.productSeries.applicationsLabel}:</span>
                 <p className="text-gray-700 mt-1">{product.applications}</p>
               </div>
             </div>
@@ -306,7 +278,7 @@ export const ProductSeriesSection = ({ products }: ProductSeriesSectionProps) =>
 );
 
 // 紧固件工作原理组件
-export const HowItWorksSection = () => (
+export const HowItWorksSection = ({ dict }: landingpagedictprops) => (
   <section className="py-24 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 relative overflow-hidden">
     <div className="absolute inset-0 bg-[url('/images/hero-bg.jpg')] bg-cover bg-center opacity-5" />
     <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -315,39 +287,39 @@ export const HowItWorksSection = () => (
           <span className="text-2xl">⚙️</span>
         </div>
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-          How Do Fasteners Work?
+          {dict.landingpage.Fasteners.howItWorks.title}
         </h2>
         <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-400 mx-auto mb-8" />
       </div>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         <div className="group bg-white/10 backdrop-blur-sm p-8 rounded-3xl border border-white/20 hover:bg-white/20 transition-all duration-500">
           <div className="w-16 h-16 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
             <span className="text-white font-bold text-2xl">1</span>
           </div>
-          <h3 className="text-2xl font-bold text-white mb-4">Clamping Force</h3>
+          <h3 className="text-2xl font-bold text-white mb-4">{dict.landingpage.Fasteners.howItWorks.step1.title}</h3>
           <p className="text-gray-300 leading-relaxed">
-            Bolts and screws generate tension when tightened, pulling joined parts together. The friction between surfaces prevents slippage, while the fastener's tensile strength resists separation forces.
+            {dict.landingpage.Fasteners.howItWorks.step1.desc}
           </p>
         </div>
-        
+
         <div className="group bg-white/10 backdrop-blur-sm p-8 rounded-3xl border border-white/20 hover:bg-white/20 transition-all duration-500">
           <div className="w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
             <span className="text-white font-bold text-2xl">2</span>
           </div>
-          <h3 className="text-2xl font-bold text-white mb-4">Mechanical Interlock</h3>
+          <h3 className="text-2xl font-bold text-white mb-4">{dict.landingpage.Fasteners.howItWorks.step2.title}</h3>
           <p className="text-gray-300 leading-relaxed">
-            Rivets deform to create a permanent bulge, locking parts in place. Threaded fasteners (nuts/bolts) use helical threads to convert rotational force into linear clamping pressure.
+            {dict.landingpage.Fasteners.howItWorks.step2.desc}
           </p>
         </div>
-        
+
         <div className="group bg-white/10 backdrop-blur-sm p-8 rounded-3xl border border-white/20 hover:bg-white/20 transition-all duration-500">
           <div className="w-16 h-16 bg-gradient-to-r from-orange-400 to-red-400 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
             <span className="text-white font-bold text-2xl">3</span>
           </div>
-          <h3 className="text-2xl font-bold text-white mb-4">Friction Enhancement</h3>
+          <h3 className="text-2xl font-bold text-white mb-4">{dict.landingpage.Fasteners.howItWorks.step3.title}</h3>
           <p className="text-gray-300 leading-relaxed">
-            Washers increase surface area, distributing load and reducing loosening from vibration. Lock nuts feature nylon inserts or deformed threads to create extra friction.
+            {dict.landingpage.Fasteners.howItWorks.step3.desc}
           </p>
         </div>
       </div>
@@ -356,7 +328,7 @@ export const HowItWorksSection = () => (
 );
 
 // 组件详情和材料规格组件
-export const SpecificationsSection = () => (
+export const SpecificationsSection = ({ dict }: landingpagedictprops) => (
   <section id="specifications" className="relative py-24 overflow-hidden">
     <div className="absolute inset-0 bg-gradient-to-br from-emerald-50/50 via-transparent to-teal-50/50" />
     <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -365,11 +337,11 @@ export const SpecificationsSection = () => (
           <span className="text-2xl">🔬</span>
         </div>
         <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">
-          Component Details and Material Specifications
+          {dict.landingpage.Fasteners.specificationsSection.title}
         </h2>
         <div className="w-24 h-1 bg-gradient-to-r from-emerald-600 to-teal-600 mx-auto mb-8" />
       </div>
-      
+
       <div className="bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden shadow-xl border border-white/20 mb-16">
         <div className="overflow-x-auto">
           <table className="min-w-full">
@@ -406,7 +378,7 @@ export const SpecificationsSection = () => (
 );
 
 // 安装和使用指南组件
-export const InstallationGuidelinesSection = () => (
+export const InstallationGuidelinesSection = ({ dict }: landingpagedictprops) => (
   <section className="py-24 bg-gradient-to-br from-slate-100 to-blue-50">
     <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-16">
@@ -418,7 +390,7 @@ export const InstallationGuidelinesSection = () => (
         </h2>
         <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-orange-500 mx-auto mb-8" />
       </div>
-      
+
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
         <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/20">
           <div className="flex items-center mb-6">
@@ -446,7 +418,7 @@ export const InstallationGuidelinesSection = () => (
             </li>
           </ul>
         </div>
-        
+
         <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/20">
           <div className="flex items-center mb-6">
             <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center mr-4">
@@ -495,7 +467,7 @@ export const IndustryApplicationsSection = ({ industries }: IndustryApplications
         </h2>
         <div className="w-24 h-1 bg-gradient-to-r from-violet-600 to-fuchsia-600 mx-auto mb-8" />
       </div>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {industries.map((industry, index) => (
           <div key={index} className="group bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/20 hover:shadow-2xl transition-all duration-500 hover:scale-105">
@@ -537,7 +509,7 @@ export const FaqSection = ({ faqs, expandedFaq, toggleFaq }: FaqSectionProps) =>
         </h2>
         <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-400 mx-auto mb-8" />
       </div>
-      
+
       <div className="max-w-4xl mx-auto space-y-4">
         {faqs.map((faq, index) => (
           <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 overflow-hidden">
@@ -592,29 +564,44 @@ export const ContactSection = () => (
 );
 
 // 完整页面组件
-export const FastenersPage = () => {
+export const FaqSectionP = ({ dict,categoryId }: { dict: any,categoryId:number }) => {
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
-
   const toggleFaq = (index: number) => {
     setExpandedFaq(expandedFaq === index ? null : index);
   };
 
+  const fastenerFaqs: FAQ[] = [
+  {
+    question: dict.landingpage.Fasteners.faqs.questions[0],
+    answer: dict.landingpage.Fasteners.faqs.answers[0]
+  },
+  {
+    question: dict.landingpage.Fasteners.faqs.questions[1],
+    answer: dict.landingpage.Fasteners.faqs.answers[1]
+  },
+  {
+    question: dict.landingpage.Fasteners.faqs.questions[2],
+    answer: dict.landingpage.Fasteners.faqs.answers[2]
+  },
+  {
+    question: dict.landingpage.Fasteners.faqs.questions[3],
+    answer: dict.landingpage.Fasteners.faqs.answers[3]
+  },
+  {
+    question: dict.landingpage.Fasteners.faqs.questions[4],
+    answer: dict.landingpage.Fasteners.faqs.answers[4]
+  },
+  {
+    question: dict.landingpage.Fasteners.faqs.questions[5],
+    answer: dict.landingpage.Fasteners.faqs.answers[5]  
+  }
+];
+
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
-      <FastenerHeroSection />
-      <WhatIsFastenerSection />
-      <QualityComparisonSection />
-      <ProductSeriesSection products={fastenerProducts} />
-      <HowItWorksSection />
-      <SpecificationsSection />
-      <InstallationGuidelinesSection />
-      <IndustryApplicationsSection industries={fastenerIndustries} />
-      <FaqSection 
-        faqs={fastenerFaqs} 
-        expandedFaq={expandedFaq} 
-        toggleFaq={toggleFaq} 
-      />
-      <ContactSection />
-    </main>
+    <FaqSection
+      faqs={fastenerFaqs}
+      expandedFaq={expandedFaq}
+      toggleFaq={toggleFaq}
+    />
   );
 };
