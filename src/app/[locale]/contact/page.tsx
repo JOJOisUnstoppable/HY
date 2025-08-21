@@ -51,7 +51,7 @@ export default async function ContactPage(
               <Mail className="w-6 h-6 text-gray-400" />
               <div>
                 <h3 className="font-semibold">{dict.contact.email}</h3>
-                <p className="text-gray-600">dk-gasspring@mindrose.xyz (email from dev team)</p>
+                <p className="text-gray-600">diskdamper-info@dkmachineryinc.com</p>
               </div>
             </div>
 

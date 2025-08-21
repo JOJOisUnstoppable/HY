@@ -78,7 +78,7 @@ export function Contact({ dict, locale }: ContactProps) {
                                     <div className="flex flex-col items-center text-center">
                                         <Mail className="w-8 h-8 text-blue-500 mb-4" />
                                         <h3 className="font-semibold mb-2">{dict.contact.email}</h3>
-                                        <p className="text-gray-600">dk-gasspring@mindrose.xyz (email from dev team)</p>
+                                        <p className="text-gray-600">diskdamper-info@dkmachineryinc.com</p>
                                     </div>
                                 </div>
 
