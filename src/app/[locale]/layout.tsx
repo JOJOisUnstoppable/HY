@@ -36,24 +36,24 @@ const hubotSans = localFont({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Gas Spring Solutions',
-    template: '%s | Gas Spring Solutions'
+    default: 'Fasteners Solutions',
+    template: '%s | Fasteners Solutions'
   },
-  description: 'Professional Gas Spring Solutions for Global Manufacturing',
-  keywords: ['gas spring', 'gas strut', 'gas lift', 'damper', 'industrial hardware'],
-  authors: [{ name: 'Gas Spring Solutions' }],
+  description: 'Professional Precision Industrial Component Solutions for Global Manufacturing',
+  keywords: ['fasteners', 'industrial components', 'precision components', 'global manufacturing'],
+  authors: [{ name: 'Fasteners Solutions' }],
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://www.diskdamper.com'),
   openGraph: {
     type: 'website',
-    siteName: 'Gas Spring Solutions',
-    title: 'Gas Spring Solutions',
-    description: 'Professional Gas Spring Solutions for Global Manufacturing',
+    siteName: 'Fasteners Solutions',
+    title: 'Fasteners Solutions',
+    description: 'Professional Precision Industrial Component Solutions for Global Manufacturing',
     images: '/images/og-image.jpg',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Gas Spring Solutions',
-    description: 'Professional Gas Spring Solutions for Global Manufacturing',
+    title: 'Fasteners Solutions',
+    description: 'Professional Precision Industrial Component Solutions for Global Manufacturing',
     images: '/images/og-image.jpg',
   },
   robots: {
@@ -74,11 +74,11 @@ export const metadata: Metadata = {
     'application/ld+json': JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Gas Spring Solutions",
+      "name": "Fasteners Solutions",
       "url": process.env.NEXT_PUBLIC_BASE_URL || 'https://www.diskdamper.com',
       "logo": `${process.env.NEXT_PUBLIC_BASE_URL}/logo.svg`,
       "image": `${process.env.NEXT_PUBLIC_BASE_URL}/images/og-image.jpg`,
-      "description": "Professional Gas Spring Solutions for Global Manufacturing",
+      "description": "Professional Fasteners Solutions for Global Manufacturing",
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": process.env.NEXT_PUBLIC_CONTACT_PHONE || "+86-xxx-xxxxxxxx",
